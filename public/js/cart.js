@@ -342,7 +342,7 @@ ${itemsList}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 Please confirm my order and share dispatch / tracking details!`;
 
-  const waUrl = `https://wa.me/919625244683?text=${encodeURIComponent(orderMsg)}`;
+  const waUrl = `https://wa.me/917973437997?text=${encodeURIComponent(orderMsg)}`;
   window.open(waUrl, '_blank');
 }
 

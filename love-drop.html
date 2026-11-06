@@ -118,71 +118,37 @@
   </nav>
 
   <!-- ========================================================================= -->
-  <!-- 3. HERO SECTION: VIDEO FRAMES SCROLL ANIMATION -->
+  <!-- 3. HERO SECTION: CINEMATIC PRODUCT VIDEO (AUTOPLAYING, FULL VIEWPORT) -->
   <!-- ========================================================================= -->
-  <div id="scrolly-container" class="relative w-full" style="height: 380vh;">
-    
-    <!-- Pinned Viewport (100vh Sticky Canvas Stage) -->
-    <div id="scrolly-stage" class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center select-none bg-black">
-      
-      <!-- Video Frames Canvas (Scrubs 1:1 through 238 frames as user scrolls) -->
-      <canvas id="frame-canvas" class="absolute inset-0 w-full h-full"></canvas>
-
-      <!-- Ambient Edge Vignette & Floral Glow -->
-      <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_45%,rgba(13,10,12,0.85)_100%)]"></div>
-
-      <!-- Initial Hero Cinematic Title & Scroll Indicator (Fades smoothly in first 12% scroll) -->
-      <div id="scrolly-intro-text" class="absolute inset-0 flex flex-col items-center justify-between p-6 sm:p-12 z-20 pointer-events-none transition-all duration-300">
-        <div class="text-center pt-12 sm:pt-16 max-w-2xl mx-auto">
-          <span class="inline-block px-4 py-1.5 rounded-full bg-pink-900/30 border border-pink-400/40 text-pink-200 text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase mb-4 backdrop-blur-md shadow-lg">
-            3D Video Frame Scrollytelling
-          </span>
-          <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white tracking-wide drop-shadow-lg">
-            Love Drop
-          </h1>
-          <p class="text-xs sm:text-sm text-pink-100/90 uppercase tracking-[0.25em] mt-3 font-medium drop-shadow-md">
-            100ml Eau De Parfum • Jasmine Sambac, Damask Rose & Mysore Sandalwood
-          </p>
-        </div>
-
-        <div class="flex flex-col items-center pb-6 text-stone-400">
-          <span class="text-[10px] uppercase tracking-[0.25em] text-pink-300 mb-2 font-bold animate-pulse">
-            Scroll to Play Frame-by-Frame Animation ↓
-          </span>
-          <div class="w-5 h-9 rounded-full border border-pink-300/50 flex items-start justify-center p-1">
-            <div class="w-1.5 h-2.5 rounded-full bg-pink-300 animate-bounce"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Progressive Sensory Callouts during scroll sequence -->
-      <div id="act-1-callout" class="absolute left-6 sm:left-14 lg:left-24 top-1/2 -translate-y-1/2 max-w-xs sm:max-w-sm z-20 opacity-0 pointer-events-none transition-all duration-500">
-        <div class="glass-card p-6 rounded-2xl shadow-2xl border-l-4 border-l-pink-400">
-          <span class="text-[10px] font-bold text-pink-300 uppercase tracking-[0.25em] block mb-1">Act 01 • The Opening</span>
-          <h3 class="font-serif text-2xl text-white font-bold mb-2">Jasmine Sambac & White Petals</h3>
-          <p class="text-xs text-stone-300 leading-relaxed">
-            Fresh morning-picked night jasmine opens with radiant floral purity, like a delicate spring breeze caressing warm skin.
-          </p>
-        </div>
-      </div>
-
-      <div id="act-2-callout" class="absolute right-6 sm:right-14 lg:right-24 top-1/2 -translate-y-1/2 max-w-xs sm:max-w-sm z-20 opacity-0 pointer-events-none transition-all duration-500">
-        <div class="glass-card p-6 rounded-2xl shadow-2xl border-r-4 border-r-pink-400 text-right">
-          <span class="text-[10px] font-bold text-pink-300 uppercase tracking-[0.25em] block mb-1">Act 02 • The Core</span>
-          <h3 class="font-serif text-2xl text-white font-bold mb-2">Damask Rose & Sandalwood</h3>
-          <p class="text-xs text-stone-300 leading-relaxed">
-            Concentrated damask rose absolute meets creamy golden sandalwood and Bourbon vanilla for a timeless 8+ hour trail.
-          </p>
-        </div>
-      </div>
-
-      <!-- Scrub Progress Bar -->
-      <div class="absolute bottom-6 left-8 right-8 max-w-md mx-auto h-[2px] bg-white/10 rounded-full overflow-hidden z-20 pointer-events-none">
-        <div id="scrolly-progress-bar" class="h-full bg-gradient-to-r from-pink-400 to-brand-gold w-0 transition-all duration-75"></div>
-      </div>
-
+  <header class="relative w-full min-h-[75vh] sm:min-h-[82vh] lg:min-h-[88vh] flex items-end sm:items-center justify-center overflow-hidden border-b border-pink-400/20 bg-black">
+    <div class="absolute inset-0 w-full h-full overflow-hidden">
+      <video autoplay loop muted playsinline class="w-full h-full object-cover sm:object-contain bg-black">
+        <source src="public/assets/products/love-drop/product_video.mp4" type="video/mp4">
+      </video>
+      <!-- Ambient Vignette & Text Backdrop -->
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-noir via-brand-noir/40 to-black/30 pointer-events-none"></div>
     </div>
-  </div>
+
+    <div class="relative z-20 max-w-4xl mx-auto px-4 text-center pb-12 sm:pb-16 pt-20">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-pink-900/30 border border-pink-400/40 text-pink-200 text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase mb-3 backdrop-blur-md shadow-lg">
+        Official Product Showcase
+      </span>
+      <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-white tracking-wide drop-shadow-xl leading-tight">
+        Love Drop
+      </h1>
+      <p class="text-xs sm:text-sm text-stone-200 uppercase tracking-[0.18em] sm:tracking-[0.25em] mt-2 font-medium drop-shadow-md max-w-xl mx-auto">
+        100ml Eau De Parfum • Jasmine Sambac, Damask Rose & Mysore Sandalwood
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3.5 max-w-xs sm:max-w-none mx-auto">
+        <a href="#acquisition-portal" class="w-full sm:w-auto px-8 py-3.5 rounded-full btn-shimmer text-brand-noir font-bold text-xs uppercase tracking-[0.2em] shadow-xl transition-all">
+          Acquire Now • ₹825
+        </a>
+        <a href="#specs-section" class="w-full sm:w-auto px-6 py-3.5 rounded-full border border-stone-600 hover:border-brand-gold text-stone-300 hover:text-white text-xs font-semibold uppercase tracking-wider backdrop-blur-md transition-all">
+          View Specifications ↓
+        </a>
+      </div>
+    </div>
+  </header>
 
   <!-- ========================================================================= -->
   <!-- STRICT SCROLL GATE: THE REST OF THE PAGE FLOWS NATURALLY AFTER HERO -->
@@ -193,7 +159,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 1: PURCHASING ENGINE (THE BUY SECTION) -->
     <!-- ========================================================================= -->
-    <section id="buy-section" class="scroll-mt-24">
+    <section id="acquisition-portal" class="scroll-mt-24">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs uppercase tracking-widest text-brand-amber font-bold block mb-1">Acquisition Portal</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-normal text-white">Acquire Love Drop Eau De Parfum</h2>
@@ -214,35 +180,25 @@
               <span>In Stock • Ready to Ship</span>
             </div>
 
-            <!-- Active Main Image -->
+            <!-- Active Main MP4 Video Player (First and visible by default, autoplaying on mute) -->
+            <video id="p-main-video" 
+                   src="public/assets/products/love-drop/product_video.mp4" 
+                   autoplay loop muted playsinline controls 
+                   class="w-full h-full object-contain rounded-xl bg-black">
+            </video>
+
+            <!-- Active Main Image (Swapped when image thumbnail is clicked) -->
             <img id="p-main-img" 
                  src="public/assets/products/love-drop/product_shot_1.jpg" 
                  alt="Love Drop Eau De Parfum 100ml" 
-                 class="w-full h-full object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.5)] transition-all duration-300 group-hover:scale-105 cursor-zoom-in">
-
-            <!-- Active Main MP4 Video Player (Shown when video thumbnail is clicked) -->
-            <video id="p-main-video" 
-                   src="public/assets/products/love-drop/product_video.mp4" 
-                   controls loop playsinline 
-                   class="hidden w-full h-full object-contain rounded-xl bg-black">
-            </video>
+                 class="hidden w-full h-full object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.5)] transition-all duration-300 group-hover:scale-105 cursor-zoom-in">
           </div>
 
-          <!-- Thumbnails Row (Images + MP4 Video in 3rd position) -->
+          <!-- Thumbnails Row (Video in 1st position, followed by product shots) -->
           <div class="grid grid-cols-6 gap-2 sm:gap-2.5 mt-4 w-full">
             
-            <!-- Thumbnail 1: Shot 1 -->
-            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_1.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Flacon Front View">
-              <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Shot 1" class="w-full h-12 object-contain">
-            </button>
-
-            <!-- Thumbnail 2: Shot 2 -->
-            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_2.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Flacon Angle View">
-              <img src="public/assets/products/love-drop/product_shot_2.jpg" alt="Shot 2" class="w-full h-12 object-contain">
-            </button>
-
-            <!-- Thumbnail 3: OFFICIAL PRODUCT VIDEO (MP4) -->
-            <button onclick="changeMainMedia('video', 'public/assets/products/love-drop/product_video.mp4', this)" class="thumb-btn relative border border-brand-gold/60 rounded-xl overflow-hidden p-1 bg-brand-charcoal shadow-sm transition-all hover:scale-105 group" title="Watch Product Showcase Video (MP4)">
+            <!-- Thumbnail 1: OFFICIAL PRODUCT VIDEO (MP4) - Active Default -->
+            <button onclick="changeMainMedia('video', 'public/assets/products/love-drop/product_video.mp4', this)" class="thumb-btn relative border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-brand-charcoal shadow-sm transition-all hover:scale-105 group" title="Watch Product Showcase Video (MP4)">
               <div class="relative w-full h-12 flex items-center justify-center bg-black/80 rounded-lg overflow-hidden">
                 <img src="public/assets/products/love-drop/product_shot_1.jpg" class="w-full h-full object-cover opacity-50">
                 <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-brand-gold/20 transition-colors">
@@ -252,6 +208,16 @@
                 </div>
                 <span class="absolute bottom-0.5 right-1 text-[8px] font-bold text-brand-gold uppercase bg-black/90 px-1 rounded border border-brand-gold/30">VIDEO</span>
               </div>
+            </button>
+
+            <!-- Thumbnail 2: Shot 1 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_1.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Flacon Front View">
+              <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Shot 1" class="w-full h-12 object-contain">
+            </button>
+
+            <!-- Thumbnail 3: Shot 2 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_2.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Flacon Angle View">
+              <img src="public/assets/products/love-drop/product_shot_2.jpg" alt="Shot 2" class="w-full h-12 object-contain">
             </button>
 
             <!-- Thumbnail 4: Shot 3 -->
@@ -337,7 +303,7 @@
                 <span id="p-add-cart-text">Add To Scent Cart • ₹825</span>
               </button>
 
-              <a id="p-wa-btn" href="https://wa.me/919625244683?text=Hi%20Indian%20Celebritie%2C%20I%20want%20to%20order%20Love%20Drop%20Eau%20De%20Parfum%20100ml%20(%E2%82%B9825).%20Please%20confirm%20dispatch!" 
+              <a id="p-wa-btn" href="https://wa.me/917973437997?text=Hi%20Indian%20Celebritie%2C%20I%20want%20to%20order%20Love%20Drop%20Eau%20De%20Parfum%20100ml%20(%E2%82%B9825).%20Please%20confirm%20dispatch!" 
                  target="_blank" 
                  class="w-full py-4 px-8 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center space-x-2.5 shadow-lg transition-all">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
@@ -373,6 +339,7 @@
     <!-- ========================================================================= -->
     <!-- SECTION 2: ENGINEERING & FORMULATION WORKBENCH -->
     <!-- ========================================================================= -->
+    <section id="specs-section" class="space-y-12">
     <section class="space-y-12">
       <div class="text-center max-w-3xl mx-auto">
         <span class="text-xs uppercase tracking-widest text-brand-amber font-bold block mb-1">Brand Craftsmanship & Specifications</span>
@@ -834,7 +801,7 @@
         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
         <span>Send Order on WhatsApp</span>
       </button>
-      <div class="mt-2 text-center text-[10px] text-stone-400">Direct VIP Dispatch via +91 96252 44683</div>
+      <div class="mt-2 text-center text-[10px] text-stone-400">Direct VIP Dispatch via +91 79734 37997</div>
     </div>
   </aside>
 
@@ -852,33 +819,32 @@
         <a href="fifty-shades.html">Fifty Shades</a>
         <a href="teen-hug.html">Teen Hug</a>
         <a href="love-drop.html">Love Drop</a>
-        <a href="https://wa.me/919625244683" target="_blank">WhatsApp Desk</a>
+        <a href="https://wa.me/917973437997" target="_blank">WhatsApp Desk</a>
       </div>
       <div class="pt-6 border-t border-stone-800 text-[11px] text-stone-500">
-        © 2026 Indian Celebritie. Direct Concierge: +91 96252 44683
+        © 2026 Indian Celebritie. Direct Concierge: +91 79734 37997
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="public/js/cart.js"></script>
-  <script src="public/js/frame_scrubber.js"></script>
   <script>
-    // Initialize Frame Scroller Hero with 238 frames
+    // Automatic muted autoplay for acquisition video on scroll/view
     document.addEventListener('DOMContentLoaded', () => {
-      if (window.initFrameScrubber) {
-        window.initFrameScrubber({
-          containerId: 'scrolly-container',
-          canvasId: 'frame-canvas',
-          basePath: 'public/assets/products/love-drop/frames/',
-          frameCount: 238,
-          introTextId: 'scrolly-intro-text',
-          progressBarId: 'scrolly-progress-bar',
-          callouts: [
-            { id: 'act-1-callout', start: 0.18, end: 0.44, side: 'left' },
-            { id: 'act-2-callout', start: 0.48, end: 0.74, side: 'right' }
-          ]
-        });
+      const vid = document.getElementById('p-main-video');
+      if (vid) {
+        vid.muted = true;
+        vid.play().catch(() => {});
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !vid.classList.contains('hidden')) {
+              vid.play().catch(() => {});
+            }
+          });
+        }, { threshold: 0.2 });
+        observer.observe(vid);
       }
     });
 
@@ -895,6 +861,7 @@
         img.classList.add('hidden');
         vid.classList.remove('hidden');
         vid.src = src;
+        vid.muted = true;
         vid.play().catch(() => {});
       } else {
         vid.pause();
@@ -940,7 +907,7 @@
         pMrp.textContent = '₹' + mrp.toLocaleString('en-IN');
         pSavings.textContent = 'Save ₹' + (mrp - price).toLocaleString('en-IN') + ' (Collector Duo)';
         addText.textContent = 'Add To Scent Cart • ₹' + price.toLocaleString('en-IN');
-        waBtn.href = `https://wa.me/919625244683?text=${encodeURIComponent("Hi Indian Celebritie, I want to order Love Drop Collector Duo (2x 100ml) for ₹1,550. Please confirm express dispatch!")}`;
+        waBtn.href = `https://wa.me/917973437997?text=${encodeURIComponent("Hi Indian Celebritie, I want to order Love Drop Collector Duo (2x 100ml) for ₹1,550. Please confirm express dispatch!")}`;
       } else {
         singleCard.classList.add('border-2', 'border-brand-gold', 'bg-brand-charcoal', 'shadow-[0_0_20px_rgba(212,175,55,0.25)]');
         singleCard.classList.remove('border-stone-700', 'bg-brand-dark');
@@ -951,7 +918,7 @@
         pMrp.textContent = '₹' + mrp.toLocaleString('en-IN');
         pSavings.textContent = 'Save ₹' + (mrp - price).toLocaleString('en-IN') + ' (45% OFF)';
         addText.textContent = 'Add To Scent Cart • ₹' + price.toLocaleString('en-IN');
-        waBtn.href = `https://wa.me/919625244683?text=${encodeURIComponent("Hi Indian Celebritie, I want to order Love Drop Eau De Parfum 100ml (₹825). Please confirm express dispatch!")}`;
+        waBtn.href = `https://wa.me/917973437997?text=${encodeURIComponent("Hi Indian Celebritie, I want to order Love Drop Eau De Parfum 100ml (₹825). Please confirm express dispatch!")}`;
       }
     }
 
