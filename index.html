@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,6 +62,11 @@
   </script>
 
   <style>
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+      width: 100%;
+    }
     .gold-gradient-text {
       background: linear-gradient(135deg, #F5E8C8 0%, #D4AF37 50%, #A87910 100%);
       -webkit-background-clip: text;
@@ -105,13 +110,13 @@
   <!-- ========================================================================= -->
   <!-- 1. TOP ANNOUNCEMENT TICKER WITH COUNTDOWN -->
   <!-- ========================================================================= -->
-  <div class="bg-gradient-to-r from-brand-festiveWine via-brand-festiveRed to-brand-festiveWine text-white py-2 px-4 text-xs font-semibold tracking-wider text-center flex items-center justify-center space-x-3 border-b border-brand-gold/30 relative z-50 shadow-md">
-    <span class="inline-flex items-center space-x-1.5 text-brand-champagne">
-      <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
-      <span class="uppercase tracking-widest font-bold">Festive Flash Sale is Live:</span>
-      <span class="italic font-serif">Hurry!</span>
+  <div class="w-full max-w-full overflow-hidden bg-gradient-to-r from-brand-festiveWine via-brand-festiveRed to-brand-festiveWine text-white py-1.5 sm:py-2 px-2 sm:px-4 text-[10px] sm:text-xs font-semibold tracking-wider text-center flex items-center justify-center gap-1.5 sm:gap-3 border-b border-brand-gold/30 relative z-50 shadow-md">
+    <span class="inline-flex items-center space-x-1 sm:space-x-1.5 text-brand-champagne shrink-0">
+      <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-brand-gold animate-ping"></span>
+      <span class="uppercase tracking-wider sm:tracking-widest font-bold">Festive Flash Sale:</span>
+      <span class="italic font-serif hidden xs:inline">Hurry!</span>
     </span>
-    <div class="inline-flex items-center space-x-1.5 bg-black/40 px-3 py-0.5 rounded-full border border-brand-gold/40 text-[11px] font-mono text-brand-gold font-bold">
+    <div class="inline-flex items-center space-x-1 sm:space-x-1.5 bg-black/40 px-2 sm:px-3 py-0.5 rounded-full border border-brand-gold/40 text-[10px] sm:text-[11px] font-mono text-brand-gold font-bold shrink-0">
       <span id="timer-hours">02h</span> : <span id="timer-mins">45m</span> : <span id="timer-secs">30s</span>
     </div>
     <span class="hidden md:inline text-brand-champagne/90 font-medium">| FREE Pan-India Courier on Every Order</span>
@@ -120,28 +125,28 @@
   <!-- ========================================================================= -->
   <!-- 2. NAVBAR (STRICT SPEC: LOGO, INDIAN CELEBRITIE, FRAGRANCES, REVIEWS, CART) -->
   <!-- ========================================================================= -->
-  <nav class="sticky top-0 z-40 glass-dark">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+  <nav class="sticky top-0 z-40 glass-dark w-full max-w-full overflow-hidden">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
         
         <!-- Indian Celebritie Logo & Name Only -->
-        <a href="index.html" class="flex items-center space-x-3.5 group">
-          <div class="w-11 h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md overflow-hidden p-1 group-hover:scale-105 transition-transform">
-            <img src="public/assets/branding/Logo.png" alt="Indian Celebritie Logo" class="w-full h-full object-contain" onerror="this.outerHTML='<span class=\'font-serif text-lg font-bold gold-gradient-text\'>IC</span>'">
+        <a href="index.html" class="flex items-center space-x-2 sm:space-x-3.5 group min-w-0 shrink">
+          <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md overflow-hidden p-0.5 sm:p-1 group-hover:scale-105 transition-transform shrink-0">
+            <img src="public/assets/branding/Logo.png" alt="Indian Celebritie Logo" class="w-full h-full object-contain" onerror="this.outerHTML='<span class=\'font-serif text-sm sm:text-lg font-bold gold-gradient-text\'>IC</span>'">
           </div>
-          <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.18em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
+          <span class="font-serif text-sm xs:text-base sm:text-xl md:text-2xl font-bold tracking-[0.08em] sm:tracking-[0.18em] uppercase text-white group-hover:text-brand-champagne transition-colors truncate">Indian Celebritie</span>
         </a>
 
         <!-- Desktop Navigation: ONLY Fragrances, Reviews, Cart -->
-        <div class="flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
-          <a href="#bestsellers" class="hover:text-brand-gold transition-colors">Fragrances</a>
-          <a href="#reviews" class="hover:text-brand-gold transition-colors">Reviews</a>
+        <div class="flex items-center space-x-2.5 xs:space-x-4 sm:space-x-8 text-[11px] sm:text-xs uppercase tracking-wider sm:tracking-widest font-semibold text-stone-300 shrink-0">
+          <a href="#bestsellers" class="hover:text-brand-gold transition-colors py-1">Fragrances</a>
+          <a href="#reviews" class="hover:text-brand-gold transition-colors py-1">Reviews</a>
 
           <!-- Cart Button -->
-          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md flex items-center space-x-1.5" title="View Scent Cart">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <button onclick="toggleCartDrawer(true)" class="relative p-2 sm:p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md flex items-center space-x-1.5 shrink-0" title="View Scent Cart">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
             <span class="hidden sm:inline text-[11px] font-bold uppercase tracking-wider text-brand-gold">Cart</span>
-            <span class="cart-badge-count absolute -top-1 -right-1 bg-brand-gold text-brand-noir font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-lg">1</span>
+            <span class="cart-badge-count absolute -top-1 -right-1 bg-brand-gold text-brand-noir font-bold text-[9px] sm:text-[10px] w-4 h-4 sm:w-5 sm:h-5 rounded-full flex items-center justify-center shadow-lg">1</span>
           </button>
         </div>
 
