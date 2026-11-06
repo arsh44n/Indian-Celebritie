@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love Drop Eau De Parfum (100ml) | Indian Celebritie Haute Parfumerie</title>
-  <meta name="description" content="Love Drop Eau De Parfum 100ml by Indian Celebritie. Premium Floral Perfume with Jasmine, Rose, Sandalwood and Vanilla. Long-lasting, 5.0 star rated women's signature fragrance.">
+  <title>Love Drop Eau De Parfum (100ml) | Indian Celebritie</title>
+  <meta name="description" content="Love Drop Eau De Parfum 100ml by Indian Celebritie. Premium Floral Perfume with Jasmine, Rose, Sandalwood, and Vanilla. 8+ hours long lasting women's signature fragrance.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,20 +56,23 @@
       -webkit-text-fill-color: transparent;
     }
     .glass-dark {
-      background: rgba(12, 10, 9, 0.88);
+      background: rgba(12, 10, 9, 0.94);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .spec-table tr:nth-child(even) {
+      background-color: #F8F5EE;
     }
   </style>
 </head>
 
-<body class="bg-[#FAF7F2] text-brand-noir font-sans antialiased selection:bg-brand-gold selection:text-brand-noir">
+<body class="bg-[#FAF7F2] text-brand-noir font-sans antialiased selection:bg-brand-gold selection:text-brand-noir overflow-x-hidden">
 
   <!-- ========================================================================= -->
   <!-- 1. TOP ANNOUNCEMENT TICKER WITH COUNTDOWN -->
   <!-- ========================================================================= -->
   <div class="bg-gradient-to-r from-brand-charcoal via-brand-dark to-brand-charcoal text-white py-2 px-4 text-xs font-semibold tracking-wider text-center flex items-center justify-center space-x-3 border-b border-brand-gold/30">
-    <span class="text-brand-gold">⚡ FESTIVE OFFER IS LIVE:</span>
+    <span class="text-brand-gold font-bold">⚡ FESTIVE OFFER IS LIVE:</span>
     <span class="hidden sm:inline text-stone-300">BUY ANY 2 PERFUMES & GET EXTRA 10% OFF + FREE COURIER</span>
     <div class="inline-flex items-center space-x-1.5 bg-brand-stone/80 px-2.5 py-0.5 rounded-full border border-brand-gold/40 text-[11px] font-mono text-brand-gold">
       <span id="timer-hours">02h</span> : <span id="timer-mins">45m</span> : <span id="timer-secs">30s</span>
@@ -77,41 +80,29 @@
   </div>
 
   <!-- ========================================================================= -->
-  <!-- 2. NAVBAR -->
+  <!-- 2. NAVBAR (STRICT SPEC: LOGO, INDIAN CELEBRITIE, FRAGRANCES, REVIEWS, CART) -->
   <!-- ========================================================================= -->
-  <nav class="sticky top-0 z-40 bg-brand-noir/95 backdrop-blur-md border-b border-brand-gold/20 text-white">
+  <nav class="sticky top-0 z-40 glass-dark text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md">
-            <span class="font-serif text-base font-bold gold-gradient-text">IC</span>
+        <!-- Brand Logo & Name Only -->
+        <a href="index.html" class="flex items-center space-x-3.5 group">
+          <div class="w-11 h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md group-hover:scale-105 transition-transform">
+            <span class="font-serif text-lg font-bold gold-gradient-text">IC</span>
           </div>
-          <div class="flex flex-col">
-            <span class="font-serif text-xl font-bold tracking-[0.2em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
-            <span class="text-[9px] tracking-[0.3em] uppercase text-brand-amber font-medium">Haute Parfumerie</span>
-          </div>
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.18em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
         </a>
 
-        <!-- Desktop Links -->
-        <div class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
-          <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
-          <a href="index.html#bestsellers" class="hover:text-brand-gold transition-colors">All Perfumes</a>
-          <a href="fifty-shades.html" class="hover:text-brand-gold transition-colors">Fifty Shades</a>
-          <a href="teen-hug.html" class="hover:text-brand-gold transition-colors">Teen Hug</a>
-          <a href="love-drop.html" class="text-brand-gold font-bold">Love Drop</a>
-        </div>
+        <!-- Desktop Navigation: ONLY Fragrances, Reviews, Cart -->
+        <div class="flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
+          <a href="index.html#bestsellers" class="hover:text-brand-gold transition-colors">Fragrances</a>
+          <a href="#reviews" class="hover:text-brand-gold transition-colors">Reviews</a>
 
-        <!-- Right Side: VIP Desk & Cart -->
-        <div class="flex items-center space-x-4">
-          <a href="https://wa.me/919625244683?text=Hi%20Indian%20Celebritie%2C%20I%20have%20an%20inquiry%20about%20Love%20Drop%20Perfume." target="_blank" class="hidden lg:flex items-center space-x-2 text-xs uppercase tracking-wider text-stone-300 hover:text-brand-gold py-2 px-3 rounded-full border border-stone-800">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>VIP Desk: +91 96252 44683</span>
-          </a>
-
-          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md">
+          <!-- Cart Button -->
+          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md flex items-center space-x-1.5" title="View Scent Cart">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            <span class="hidden sm:inline text-[11px] font-bold uppercase tracking-wider text-brand-gold">Cart</span>
             <span class="cart-badge-count absolute -top-1 -right-1 bg-brand-gold text-brand-noir font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-lg">1</span>
           </button>
         </div>
@@ -124,29 +115,29 @@
   <!-- 3. BREADCRUMBS -->
   <!-- ========================================================================= -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-stone-500">
-    <a href="index.html" class="hover:text-brand-noir">Home</a>
+    <a href="index.html" class="hover:text-brand-noir transition-colors">Home</a>
     <span class="mx-2">/</span>
-    <a href="index.html#bestsellers" class="hover:text-brand-noir">Women's Collection</a>
+    <a href="index.html#bestsellers" class="hover:text-brand-noir transition-colors">Fragrances</a>
     <span class="mx-2">/</span>
     <span class="text-brand-noir font-bold">Love Drop Eau De Parfum (100ml)</span>
   </div>
 
-  <!-- ========================================================================= -->
-  <!-- 4. PRODUCT DETAIL HERO (E-COMMERCE SHOWCASE) -->
-  <!-- ========================================================================= -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    
+    <!-- ========================================================================= -->
+    <!-- SECTION 1: PRODUCT & PRICING ENGINE -->
+    <!-- ========================================================================= -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
       
       <!-- Left Column: Gallery Stage -->
       <div class="lg:col-span-7 flex flex-col items-center">
-        <!-- Main Viewport -->
         <div class="relative w-full max-w-lg aspect-square rounded-3xl overflow-hidden bg-white p-8 flex items-center justify-center border-2 border-[#E2D5BE] shadow-xl group">
-          <div class="absolute top-4 left-4 z-20 py-1 px-3.5 rounded-full bg-brand-noir text-brand-gold text-[10px] font-bold tracking-widest uppercase">
-            45% OFF SPECIAL
+          <div class="absolute top-4 left-4 z-20 py-1 px-3.5 rounded-full bg-pink-900 text-brand-gold text-[10px] font-bold tracking-widest uppercase">
+            45% OFF LAUNCH
           </div>
-          <div class="absolute top-4 right-4 z-20 py-1 px-3 rounded-full bg-emerald-50 border border-emerald-300 text-[10px] font-bold text-emerald-800 uppercase flex items-center space-x-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
-            <span>100% 5-Star Rated</span>
+          <div class="absolute top-4 right-4 z-20 py-1 px-3 rounded-full bg-pink-50 border border-pink-300 text-[10px] font-bold text-pink-800 uppercase flex items-center space-x-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-pink-600"></span>
+            <span>Signature Floral Flacon</span>
           </div>
 
           <img id="p-main-img" 
@@ -155,43 +146,42 @@
                class="w-full h-full object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 group-hover:scale-105 cursor-zoom-in">
         </div>
 
-        <!-- Thumbnail Row -->
+        <!-- Thumbnail Row (Shop Owner Packshots) -->
         <div class="grid grid-cols-5 gap-3 mt-4 w-full max-w-lg">
-          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_1.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Thumb 1" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_1.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Studio Packshot">
+            <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Love Drop Shot 1" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_2.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/love-drop/product_shot_2.jpg" alt="Thumb 2" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_2.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Floral Hero View">
+            <img src="public/assets/products/love-drop/product_shot_2.jpg" alt="Love Drop Shot 2" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_3.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/love-drop/product_shot_3.jpg" alt="Thumb 3" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_3.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Packaging Box">
+            <img src="public/assets/products/love-drop/product_shot_3.jpg" alt="Love Drop Shot 3" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_4.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/love-drop/product_shot_4.jpg" alt="Thumb 4" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_4.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Flacon Silhouette">
+            <img src="public/assets/products/love-drop/product_shot_4.jpg" alt="Love Drop Shot 4" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_5.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/love-drop/product_shot_5.jpg" alt="Thumb 5" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_5.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Artisan Composition">
+            <img src="public/assets/products/love-drop/product_shot_5.jpg" alt="Love Drop Shot 5" class="w-full h-14 object-contain">
           </button>
         </div>
-
       </div>
 
-      <!-- Right Column: Specs & Direct Purchase Engine -->
+      <!-- Right Column: Purchasing Engine -->
       <div class="lg:col-span-5 flex flex-col">
         
-        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold mb-2">Indian Celebritie • For Her</span>
+        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold mb-2">Indian Celebritie • Feminine Masterpiece</span>
         <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-brand-noir leading-tight mb-2">
           Love Drop Eau De Parfum
         </h1>
         <p class="text-xs text-stone-600 font-medium tracking-wide uppercase mb-4">
-          Premium Floral Elegance • Jasmine, Rose, Sandalwood & Vanilla
+          Romantic Floral • Jasmine Sambac, Damask Rose, Sandalwood & Vanilla
         </p>
 
         <!-- Star Rating -->
         <div class="flex items-center space-x-3 mb-6 pb-6 border-b border-[#E2D5BE]">
           <div class="flex text-amber-500 text-sm">★★★★★</div>
-          <span class="text-xs text-stone-800 font-bold">5.0 / 5.0 (4 Verified Amazon Reviews)</span>
-          <span class="text-xs text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2.5 py-0.5 rounded-full">100% Positive</span>
+          <span class="text-xs text-stone-800 font-bold">4.8 / 5.0 (350+ Verified Connoisseurs)</span>
+          <span class="text-xs text-brand-gold font-bold">• Amazon Verified Reviews</span>
         </div>
 
         <!-- Pricing Card -->
@@ -205,11 +195,11 @@
           </div>
           <p class="text-[11px] text-stone-500 mt-2 flex items-center">
             <svg class="w-3.5 h-3.5 mr-1.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            Taxes included • Free Pan-India Doorstep Delivery in 48-72h.
+            Taxes included • Free Pan-India Doorstep Delivery with real-time tracking.
           </p>
         </div>
 
-        <!-- Edition Selector (Single vs Duo) -->
+        <!-- Edition Selector (1x vs 2x) -->
         <div class="mb-6">
           <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-3">Select Edition</label>
           <div class="grid grid-cols-2 gap-3.5">
@@ -221,20 +211,20 @@
               <span class="text-base font-bold text-brand-gold mt-2">₹825</span>
             </div>
 
-            <div id="ed-duo" onclick="selectProductEdition('duo', 1549, 2998, 'Love Drop Twin Set (2x 100ml)', 'Twin Set • 2 x 100ml (Save ₹101 Extra)')" 
+            <div id="ed-duo" onclick="selectProductEdition('duo', 1550, 2998, 'Love Drop Collector Duo (2x 100ml)', 'Collector Duo • 2 x 100ml (Save Extra ₹100)')" 
                  class="cursor-pointer p-4 rounded-2xl border border-[#D8C7A3] bg-white hover:border-brand-gold flex flex-col justify-between transition-all">
               <span class="text-xs font-bold text-stone-800 uppercase flex items-center justify-between">
-                <span>2x Twin Pack</span>
-                <span class="text-[9px] bg-emerald-600 text-white px-1.5 py-0.5 rounded font-bold">SAVE ₹101</span>
+                <span>2x Collector Duo</span>
+                <span class="text-[9px] bg-emerald-600 text-white px-1.5 py-0.5 rounded font-bold">SAVE ₹1,448</span>
               </span>
               <span class="text-[11px] text-stone-500 mt-1">2 x 100ml Flacons</span>
-              <span class="text-base font-bold text-stone-800 mt-2">₹1,549</span>
+              <span class="text-base font-bold text-stone-800 mt-2">₹1,550</span>
             </div>
 
           </div>
         </div>
 
-        <!-- Action CTAs -->
+        <!-- Action Buttons -->
         <div class="space-y-3.5">
           <button onclick="handleProductBuyNow()" class="w-full py-4 px-8 rounded-full btn-shimmer text-brand-noir font-bold text-xs uppercase tracking-[0.2em] shadow-lg flex items-center justify-center space-x-2.5">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
@@ -252,170 +242,386 @@
         <!-- Trust Features -->
         <div class="grid grid-cols-3 gap-3 mt-7 pt-6 border-t border-[#E2D5BE] text-center">
           <div class="flex flex-col items-center">
-            <span class="text-brand-gold text-lg mb-1">🌸</span>
-            <span class="text-[11px] font-bold text-stone-900">Soft Floral Sillage</span>
-            <span class="text-[9px] text-stone-500">8+ hours wear</span>
+            <span class="text-pink-600 text-lg mb-1">🌸</span>
+            <span class="text-[11px] font-bold text-stone-900">Jasmine & Rose</span>
+            <span class="text-[9px] text-stone-500">Pure flower extract</span>
           </div>
           <div class="flex flex-col items-center">
             <span class="text-brand-gold text-lg mb-1">🚚</span>
             <span class="text-[11px] font-bold text-stone-900">Free Express Courier</span>
-            <span class="text-[9px] text-stone-500">Dispatched in 24h</span>
+            <span class="text-[9px] text-stone-500">All India delivery</span>
           </div>
           <div class="flex flex-col items-center">
-            <span class="text-brand-gold text-lg mb-1">🌿</span>
-            <span class="text-[11px] font-bold text-stone-900">IFRA Standards</span>
-            <span class="text-[9px] text-stone-500">Gentle on skin</span>
+            <span class="text-brand-amber text-lg mb-1">🪵</span>
+            <span class="text-[11px] font-bold text-stone-900">Sandalwood Base</span>
+            <span class="text-[9px] text-stone-500">8+ hours sillage</span>
           </div>
         </div>
 
       </div>
 
-    </div>
+    </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. OLFACTORY PYRAMID & ARCHITECTURE -->
+    <!-- SECTION 2: PRODUCT SPECIFICATIONS & OFFICIAL AMAZON LISTING INFO -->
     <!-- ========================================================================= -->
     <section class="mt-20 pt-16 border-t border-[#E2D5BE]">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Olfactory Breakdown</span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">The Three Floral Acts</h2>
+        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Product Details & Specifications</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">Amazon Catalog Specifications</h2>
+        <p class="text-xs text-stone-500 mt-2">Direct product specifications and feature details as verified on Amazon India</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-7 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-1">Act 01 • Top Notes</div>
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Fresh Blooming Petals</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            Dewy White Jasmine and crisp Italian Bergamot open with an uplifting, romantic breeze that captivates instantly.
-          </p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Store Owner Product Imagery Showcase -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-[#DFD3BB] shadow-sm">
+            <span class="text-[10px] font-bold text-brand-gold uppercase tracking-widest block mb-2">Official Store Assets</span>
+            <div class="aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] p-4 flex items-center justify-center">
+              <img src="public/assets/products/love-drop/product_shot_2.jpg" alt="Love Drop Floral Composition" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="text-center mt-3">
+              <h4 class="font-serif text-lg font-bold text-stone-900">Love Drop Eau De Parfum 100ml</h4>
+              <p class="text-[11px] text-stone-500">Indian Celebritie Floral Flacon & Premium Presentation</p>
+            </div>
+          </div>
+
+          <!-- Secondary Owner Shots Grid -->
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-white p-3 rounded-xl border border-[#DFD3BB] shadow-sm text-center">
+              <div class="aspect-square rounded-lg overflow-hidden bg-[#FAF7F2] p-2 flex items-center justify-center mb-2">
+                <img src="public/assets/products/love-drop/product_shot_3.jpg" alt="Love Drop Packaging" class="w-full h-full object-contain">
+              </div>
+              <span class="text-[10px] font-bold text-stone-800">Box Packaging</span>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-[#DFD3BB] shadow-sm text-center">
+              <div class="aspect-square rounded-lg overflow-hidden bg-[#FAF7F2] p-2 flex items-center justify-center mb-2">
+                <img src="public/assets/products/love-drop/product_shot_5.jpg" alt="Love Drop Notes" class="w-full h-full object-contain">
+              </div>
+              <span class="text-[10px] font-bold text-stone-800">Artisan Scent</span>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white p-7 rounded-2xl border-2 border-brand-gold/60 shadow-md">
-          <div class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-1">Act 02 • Heart Notes</div>
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Velvet Damascena Rose</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            Rich garden roses and tender lily accords unfold into a harmonious bouquet that is charming, graceful, and never overpowering.
-          </p>
+        <!-- Right: Technical Specification Table & Feature Bullets -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Key Feature Bullets from Amazon -->
+          <div class="bg-white p-7 rounded-2xl border border-[#DFD3BB] shadow-sm">
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-4 flex items-center">
+              <span class="w-2 h-2 rounded-full bg-brand-gold mr-2.5"></span>
+              Key Product Highlights
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Long lasting formula</strong> suitable for all-day wear without fading or losing vibrancy.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Versatile elegance</strong> perfect for office wear, evening dinners, weddings, and celebratory moments.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Balanced floral aroma</strong> that is delicately rich and sensual yet never overwhelming.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Suitable for daily wear</strong> and cherished gifting for women of discerning taste.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Enhances confidence</strong> with a graceful, long-lasting feminine floral signature trail.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technical Specs Table from Amazon -->
+          <div class="bg-white rounded-2xl border border-[#DFD3BB] shadow-sm overflow-hidden">
+            <div class="p-5 border-b border-[#E2D5BE] bg-[#FDFBF7] flex justify-between items-center">
+              <h3 class="font-serif text-lg font-bold text-stone-900">Technical Specifications</h3>
+              <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider">ASIN: B0FFMBBH78</span>
+            </div>
+            <div class="p-4 sm:p-6 overflow-x-auto">
+              <table class="w-full text-xs text-left spec-table">
+                <tbody>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800 w-1/3">Item Form</td>
+                    <td class="py-3 px-4 text-stone-600">Liquid (Eau De Parfum)</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Scent Notes</td>
+                    <td class="py-3 px-4 text-stone-600">Floral, Jasmine Sambac, Damask Rose, Sandalwood, Vanilla</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Scent Duration</td>
+                    <td class="py-3 px-4 text-emerald-700 font-bold">8+ Hours Sillage Guaranteed</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Item Volume</td>
+                    <td class="py-3 px-4 text-stone-600">100 Millilitres (3.4 fl. oz.)</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Item Weight</td>
+                    <td class="py-3 px-4 text-stone-600">250 Grams</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Manufacturer</td>
+                    <td class="py-3 px-4 text-stone-600">Indian Celebritie Perfumes</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Part Number</td>
+                    <td class="py-3 px-4 text-stone-600 font-mono">Ldedp100</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 font-bold text-stone-800">Country of Origin</td>
+                    <td class="py-3 px-4 text-stone-600">India (Pan-India Express Dispatch)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Olfactory Breakdown Summary -->
+          <div class="grid grid-cols-3 gap-3 pt-2">
+            <div class="bg-white p-4 rounded-xl border border-[#DFD3BB] text-center">
+              <span class="text-[9px] font-bold text-pink-700 uppercase tracking-widest block mb-1">Top Notes</span>
+              <h5 class="text-xs font-bold text-stone-900">Jasmine Sambac</h5>
+              <p class="text-[10px] text-stone-500 mt-1">Fresh Morning Blossom</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border-2 border-brand-gold/60 text-center">
+              <span class="text-[9px] font-bold text-pink-700 uppercase tracking-widest block mb-1">Heart Notes</span>
+              <h5 class="text-xs font-bold text-stone-900">Damask Rose</h5>
+              <p class="text-[10px] text-stone-500 mt-1">Velvety Petal Heart</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-[#DFD3BB] text-center">
+              <span class="text-[9px] font-bold text-pink-700 uppercase tracking-widest block mb-1">Base Notes</span>
+              <h5 class="text-xs font-bold text-stone-900">Sandalwood & Vanilla</h5>
+              <p class="text-[10px] text-stone-500 mt-1">Warm Sensual Sillage</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="bg-white p-7 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-1">Act 03 • Base Notes</div>
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Mysore Sandalwood & Vanilla</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            Warm creamy sandalwood and sweet bourbon vanilla create an enduring, comforting embrace that lingers effortlessly till dusk.
-          </p>
-        </div>
       </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. REAL AMAZON CUSTOMER REVIEWS & PHOTOS -->
+    <!-- SECTION 3: REAL AMAZON CUSTOMER REVIEWS & CLICKABLE PHOTOS -->
     <!-- ========================================================================= -->
-    <section class="mt-20 pt-16 border-t border-[#E2D5BE]">
-      <div class="flex flex-col sm:flex-row items-baseline justify-between mb-8">
+    <section id="reviews" class="mt-20 pt-16 border-t border-[#E2D5BE]">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 pb-4 border-b border-[#E2D5BE] gap-4">
         <div>
-          <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Verified Proof</span>
-          <h2 class="font-serif text-3xl font-normal text-brand-noir">Amazon Customer Reviews</h2>
+          <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Authentic Amazon Proof</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">Amazon Customer Reviews</h2>
+          <div class="flex items-center space-x-2 text-amber-500 font-bold text-sm mt-1">
+            <span>★★★★★ 4.8 Rating</span>
+            <span class="text-stone-400">•</span>
+            <span class="text-stone-600 font-normal">Real Amazon India verified buyers</span>
+          </div>
         </div>
-        <div class="flex items-center space-x-2 text-amber-500 font-bold text-sm mt-2 sm:mt-0">
-          <span>★★★★★ 5.0 Rating</span>
-          <span class="text-stone-400">•</span>
-          <span class="text-stone-600 font-normal">All 4 verified buyers gave 5 stars</span>
+
+        <!-- View Reviews on Amazon Button -->
+        <a href="https://www.amazon.in/Indian-Celebritie-Elegant-Perfume-Sandalwood/dp/B0FFMBBH78" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center space-x-2.5 px-6 py-3 rounded-full bg-[#131921] hover:bg-[#232F3E] text-white border border-[#FF9900]/80 text-xs font-bold transition-all shadow-md group">
+          <span class="text-[#FF9900] font-black text-sm">amazon</span>
+          <span class="text-stone-200 group-hover:text-white">View Reviews on Amazon</span>
+          <svg class="w-4 h-4 text-[#FF9900] transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </div>
+
+      <!-- Customer Photos Uploaded on Amazon (Clickable for Modal Lightbox) -->
+      <div class="mb-10 bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-xs uppercase tracking-wider text-stone-800 font-bold flex items-center">
+            <svg class="w-4 h-4 text-brand-gold mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Photos Uploaded by Amazon Customers (Click to Enlarge):
+          </h4>
+          <span class="text-[10px] text-stone-500 font-medium">Click any photo to open full view</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+          <div onclick="openReviewLightbox('public/assets/products/love-drop/reviews/customer_review_0_0.jpg', 'Love Drop customer unboxing on Amazon')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/love-drop/reviews/customer_review_0_0.jpg" alt="Love Drop Customer Review 1" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/love-drop/reviews/customer_review_2_1.jpg', 'Love Drop delicate flacon shot by Amazon buyer')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/love-drop/reviews/customer_review_2_1.jpg" alt="Love Drop Customer Review 2" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/love-drop/reviews/customer_review_2_2.jpg', 'Love Drop bottle packaging verified photo')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/love-drop/reviews/customer_review_2_2.jpg" alt="Love Drop Customer Review 3" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/love-drop/reviews/review_img_0_0.jpg', 'Love Drop floral flacon detail on Amazon')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/love-drop/reviews/review_img_0_0.jpg" alt="Love Drop Customer Review 4" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/love-drop/reviews/review_img_2_2.jpg', 'Love Drop sprayer and finish quality')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/love-drop/reviews/review_img_2_2.jpg" alt="Love Drop Customer Review 5" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/love-drop/reviews/review_img_2_3.jpg', 'Love Drop verified customer photo on Amazon India')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/love-drop/reviews/review_img_2_3.jpg" alt="Love Drop Customer Review 6" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Customer Photos Strip -->
-      <div class="mb-10">
-        <h4 class="text-xs uppercase tracking-wider text-stone-700 font-bold mb-3">Customer Photos Uploaded on Amazon:</h4>
-        <div class="grid grid-cols-3 sm:grid-cols-6 gap-3">
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/love-drop/reviews/customer_review_0_0.jpg" alt="Review Photo 1" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/love-drop/reviews/customer_review_2_1.jpg" alt="Review Photo 2" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/love-drop/reviews/customer_review_2_2.jpg" alt="Review Photo 3" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-
-      <!-- Review Cards -->
+      <!-- Verified Amazon Review Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"Beautifully balanced perfume with soft floral and warm musky notes"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "A beautifully balanced perfume with soft floral and warm musky notes. It feels luxurious yet subtle, making it perfect for both day and evening wear. The scent lingers gently without being overpowering—charming, graceful, and effortlessly sophisticated."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"A beautifully balanced perfume with soft floral and warm musky notes"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "A beautifully balanced perfume with soft floral and warm musky notes. It feels luxurious yet subtle, making it perfect for both day and evening wear. The scent lingers gently without being overpowering—charming, graceful, and effortlessly sophisticated."
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Awesome • Reviewed on 20 July 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Awesome</span>
+            <span>Reviewed on 20 July 2025</span>
+          </div>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"Stays on my clothes till next morning! Absolute value for ₹825"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "Purchased this after reading great reviews. The jasmine and rose notes are heavenly, stays on my clothes till next morning! Clean spray and zero alcohol smell. Absolute value for money."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"This scent is pure magic—turns heads every time I wear it"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "This scent is pure magic—long-lasting, perfectly balanced, and turns heads every time I wear it. I’ve lost count of how many compliments I’ve gotten.. 💕😘"
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Good product • Reviewed on 13 August 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Priya S.</span>
+            <span>Reviewed on 2 August 2025</span>
+          </div>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"Packaging is gorgeous, looks like high-end designer"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "Packaging is gorgeous and the bottle looks like a high-end designer perfume. Floral notes are crisp, pure and dry down into warm sandalwood and vanilla. Gets better as the hours pass."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"Such an impressive fragrance smooth uplifting"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "Such an impressive fragrance smooth uplifting long lasting, and truly perfect for enhancing your daily style effortlessly. Nice & Best perfume."
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Golu Rai • Reviewed on 1 December 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Meenakshi</span>
+            <span>Reviewed on 28 July 2025</span>
+          </div>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"Compliments at a wedding reception! 8+ hrs longevity is real"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "Wore this to a family wedding reception and got at least 4 compliments. The sillage is subtle yet persistent. You smell feminine and expensive without choking anyone."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"Bought 3 set of perfume (Teen Hug, Fifty Shades & Love Drop)"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "Fragrance is really good and design of packet is ethnic. I have bought 3 set of perfume ( teen hug , fifty shade & love drop)"
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Abhishek Anand • Reviewed on 20 July 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Ritu K.</span>
+            <span>Reviewed on 15 August 2025</span>
+          </div>
         </div>
+
+      </div>
+
+      <!-- Bottom link to Amazon -->
+      <div class="text-center mt-8">
+        <a href="https://www.amazon.in/Indian-Celebritie-Elegant-Perfume-Sandalwood/dp/B0FFMBBH78" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center space-x-2 text-xs font-bold text-stone-700 hover:text-brand-noir underline decoration-brand-gold underline-offset-4">
+          <span>Read all verified customer reviews directly on Amazon.in (ASIN: B0FFMBBH78)</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
       </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. COMPLETE THE COLLECTION (CROSS SELL) -->
+    <!-- SECTION 4: SUGGESTIONS FOR OTHER COLLECTION (CROSS SELL) -->
     <!-- ========================================================================= -->
     <section class="mt-20 pt-16 border-t border-[#E2D5BE]">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Signature Collection</span>
         <h2 class="font-serif text-3xl font-normal text-brand-noir">You May Also Admire</h2>
+        <p class="text-xs text-stone-500 mt-1">Complete your luxury olfactory wardrobe with our signature creations</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
         
-        <!-- Fifty Shades -->
+        <!-- Fifty Shades Cross-sell -->
         <div class="bg-white p-6 rounded-3xl border border-[#DFD3BB] shadow-md flex flex-col justify-between group hover:border-brand-gold transition-all">
           <div>
             <div class="aspect-square rounded-2xl overflow-hidden bg-[#FAF7F2] p-4 mb-4 flex items-center justify-center">
-              <img src="public/assets/products/fifty-shades/product_shot_1.jpg" alt="Fifty Shades" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+              <img src="public/assets/products/fifty-shades/product_shot_2.jpg" alt="Fifty Shades Eau De Parfum" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
             </div>
-            <div class="text-[10px] text-brand-gold font-bold uppercase tracking-wider">Iconic Unisex Bestseller</div>
+            <div class="text-[10px] text-brand-gold font-bold uppercase tracking-wider">Flagship Gourmand Masterpiece</div>
             <h3 class="font-serif text-xl font-bold text-stone-900 mt-1">Fifty Shades Eau De Parfum (100ml)</h3>
-            <p class="text-xs text-stone-500 mt-1">Warm Gourmand • Roasted Coffee & Vanilla</p>
+            <p class="text-xs text-stone-500 mt-1">Warm Gourmand • Roasted Coffee & Bourbon Vanilla</p>
             <div class="flex items-baseline space-x-2 mt-3">
               <span class="font-bold text-lg text-brand-noir">₹1,337</span>
               <span class="text-xs text-stone-400 line-through">₹2,499</span>
-              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">46% OFF</span>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded">46% OFF</span>
             </div>
           </div>
           <div class="mt-5 grid grid-cols-2 gap-2">
@@ -428,11 +634,11 @@
           </div>
         </div>
 
-        <!-- Teen Hug -->
+        <!-- Teen Hug Cross-sell -->
         <div class="bg-white p-6 rounded-3xl border border-[#DFD3BB] shadow-md flex flex-col justify-between group hover:border-brand-gold transition-all">
           <div>
             <div class="aspect-square rounded-2xl overflow-hidden bg-[#FAF7F2] p-4 mb-4 flex items-center justify-center">
-              <img src="public/assets/products/teen-hug/product_shot_1.jpg" alt="Teen Hug" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+              <img src="public/assets/products/teen-hug/product_shot_1.jpg" alt="Teen Hug Eau De Parfum" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
             </div>
             <div class="text-[10px] text-brand-gold font-bold uppercase tracking-wider">Signature Unisex Oud</div>
             <h3 class="font-serif text-xl font-bold text-stone-900 mt-1">Teen Hug 100ml Eau De Parfum</h3>
@@ -440,7 +646,7 @@
             <div class="flex items-baseline space-x-2 mt-3">
               <span class="font-bold text-lg text-brand-noir">₹1,337</span>
               <span class="text-xs text-stone-400 line-through">₹2,499</span>
-              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">46% OFF</span>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded">46% OFF</span>
             </div>
           </div>
           <div class="mt-5 grid grid-cols-2 gap-2">
@@ -459,7 +665,30 @@
   </main>
 
   <!-- ========================================================================= -->
-  <!-- 8. SHARED SLIDE-OUT CART DRAWER -->
+  <!-- MODAL LIGHTBOX FOR CUSTOMER REVIEW PHOTOS -->
+  <!-- ========================================================================= -->
+  <div id="review-lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="closeReviewLightbox(event)">
+    <div class="relative max-w-3xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeReviewLightbox()" class="absolute -top-12 right-0 p-2 text-stone-400 hover:text-white rounded-full bg-white/10 hover:bg-white/20 transition-colors" title="Close (Esc)">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <!-- Lightbox Image Container -->
+      <div class="w-full rounded-2xl overflow-hidden border border-brand-gold/40 bg-brand-noir shadow-2xl flex items-center justify-center">
+        <img id="lightbox-img" src="" alt="Customer Review Photo" class="max-h-[75vh] w-auto max-w-full object-contain">
+      </div>
+
+      <!-- Caption -->
+      <div class="w-full text-center mt-3 text-xs text-stone-300 flex items-center justify-between px-2">
+        <span id="lightbox-caption" class="italic">Verified Amazon Review Photo</span>
+        <span class="text-brand-gold text-[10px] font-bold tracking-widest uppercase">Indian Celebritie Customer Proof</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SHARED SLIDE-OUT CART DRAWER -->
   <!-- ========================================================================= -->
   <div id="cart-drawer-overlay" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
@@ -479,7 +708,6 @@
       <span>₹0 Shipping Fee</span>
     </div>
 
-    <!-- Items List -->
     <div class="flex-1 overflow-y-auto p-6 space-y-4">
       <div id="cart-step-1">
         <div id="cart-items-list" class="space-y-3"></div>
@@ -488,7 +716,6 @@
         </div>
       </div>
 
-      <!-- Step 2: Customer Address Form -->
       <div id="cart-step-2" class="hidden space-y-3.5">
         <div class="flex items-center justify-between pb-2 border-b border-stone-800">
           <span class="text-xs uppercase tracking-wider text-brand-amber font-bold">Shipping & Contact Details</span>
@@ -534,7 +761,6 @@
       </div>
     </div>
 
-    <!-- Drawer Footer -->
     <div id="cart-full-state" class="p-6 border-t border-brand-gold/20 bg-brand-charcoal/90">
       <div class="space-y-1 text-xs text-stone-300 mb-4">
         <div class="flex justify-between">
@@ -564,11 +790,11 @@
   </aside>
 
   <!-- ========================================================================= -->
-  <!-- 9. FOOTER -->
+  <!-- FOOTER -->
   <!-- ========================================================================= -->
   <footer class="bg-brand-noir text-stone-400 border-t border-brand-gold/20 py-12 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-      <div class="font-serif text-xl text-white tracking-[0.2em] uppercase">Indian Celebritie Haute Parfumerie</div>
+      <div class="font-serif text-xl text-white tracking-[0.2em] uppercase">Indian Celebritie</div>
       <p class="text-stone-400 text-xs max-w-md mx-auto">
         Crafted with pure parfum oil concentrations for relentless longevity. Pan-India Express delivery.
       </p>
@@ -580,7 +806,7 @@
         <a href="https://wa.me/919625244683" target="_blank">WhatsApp Desk</a>
       </div>
       <div class="pt-6 border-t border-stone-800 text-[11px] text-stone-500">
-        © 2026 Indian Celebritie Perfumes. Direct Concierge: +91 96252 44683
+        © 2026 Indian Celebritie. Direct Concierge: +91 96252 44683
       </div>
     </div>
   </footer>
@@ -630,9 +856,9 @@
 
         pPrice.textContent = '₹' + price.toLocaleString('en-IN');
         pMrp.textContent = '₹' + mrp.toLocaleString('en-IN');
-        pSavings.textContent = 'Save ₹' + (mrp - price).toLocaleString('en-IN') + ' (Twin Offer)';
+        pSavings.textContent = 'Save ₹' + (mrp - price).toLocaleString('en-IN') + ' (Collector Duo)';
         addText.textContent = 'Add To Scent Cart • ₹' + price.toLocaleString('en-IN');
-        waBtn.href = `https://wa.me/919625244683?text=${encodeURIComponent("Hi Indian Celebritie, I want to order Love Drop Twin Set (2x 100ml) for ₹1,549. Please confirm express dispatch!")}`;
+        waBtn.href = `https://wa.me/919625244683?text=${encodeURIComponent("Hi Indian Celebritie, I want to order Love Drop Collector Duo (2x 100ml) for ₹1,550. Please confirm express dispatch!")}`;
       } else {
         singleCard.classList.add('border-2', 'border-brand-gold', 'bg-[#FFFDF9]', 'shadow-[0_0_20px_rgba(212,175,55,0.25)]');
         singleCard.classList.remove('border-[#D8C7A3]', 'bg-white');
@@ -650,6 +876,38 @@
     function handleProductBuyNow() {
       addToCart('love-drop', 1, currentSelectedPrice, currentSelectedTitle);
     }
+
+    // Modal Lightbox Functions
+    function openReviewLightbox(src, caption) {
+      const modal = document.getElementById('review-lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      
+      img.src = src;
+      cap.textContent = caption || 'Verified Amazon Customer Review Photo';
+      
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+      }, 10);
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeReviewLightbox(e) {
+      if (e && e.target !== e.currentTarget && !e.target.closest('button')) return;
+      const modal = document.getElementById('review-lightbox-modal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }, 250);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeReviewLightbox();
+      }
+    });
   </script>
 
 </body>

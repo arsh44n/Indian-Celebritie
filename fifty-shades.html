@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fifty Shades Eau De Parfum (100ml) | Indian Celebritie Haute Parfumerie</title>
+  <title>Fifty Shades Eau De Parfum (100ml) | Indian Celebritie</title>
   <meta name="description" content="Fifty Shades Eau De Parfum 100ml by Indian Celebritie. Unisex Luxury Perfume with Coffee, Vanilla, and White Floral Notes. 8+ hours long lasting signature fragrance.">
   
   <!-- Google Fonts -->
@@ -55,16 +55,24 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    .glass-dark {
+      background: rgba(12, 10, 9, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .spec-table tr:nth-child(even) {
+      background-color: #F8F5EE;
+    }
   </style>
 </head>
 
-<body class="bg-[#FAF7F2] text-brand-noir font-sans antialiased selection:bg-brand-gold selection:text-brand-noir">
+<body class="bg-[#FAF7F2] text-brand-noir font-sans antialiased selection:bg-brand-gold selection:text-brand-noir overflow-x-hidden">
 
   <!-- ========================================================================= -->
   <!-- 1. TOP ANNOUNCEMENT TICKER WITH COUNTDOWN -->
   <!-- ========================================================================= -->
   <div class="bg-gradient-to-r from-brand-charcoal via-brand-dark to-brand-charcoal text-white py-2 px-4 text-xs font-semibold tracking-wider text-center flex items-center justify-center space-x-3 border-b border-brand-gold/30">
-    <span class="text-brand-gold">⚡ FESTIVE OFFER IS LIVE:</span>
+    <span class="text-brand-gold font-bold">⚡ FESTIVE OFFER IS LIVE:</span>
     <span class="hidden sm:inline text-stone-300">BUY ANY 2 PERFUMES & GET EXTRA 10% OFF + FREE COURIER</span>
     <div class="inline-flex items-center space-x-1.5 bg-brand-stone/80 px-2.5 py-0.5 rounded-full border border-brand-gold/40 text-[11px] font-mono text-brand-gold">
       <span id="timer-hours">02h</span> : <span id="timer-mins">45m</span> : <span id="timer-secs">30s</span>
@@ -72,38 +80,29 @@
   </div>
 
   <!-- ========================================================================= -->
-  <!-- 2. NAVBAR -->
+  <!-- 2. NAVBAR (STRICT SPEC: LOGO, INDIAN CELEBRITIE, FRAGRANCES, REVIEWS, CART) -->
   <!-- ========================================================================= -->
-  <nav class="sticky top-0 z-40 bg-brand-noir/95 backdrop-blur-md border-b border-brand-gold/20 text-white">
+  <nav class="sticky top-0 z-40 glass-dark text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-10 h-10 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md">
-            <span class="font-serif text-base font-bold gold-gradient-text">IC</span>
+        <!-- Brand Logo & Name Only -->
+        <a href="index.html" class="flex items-center space-x-3.5 group">
+          <div class="w-11 h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md group-hover:scale-105 transition-transform">
+            <span class="font-serif text-lg font-bold gold-gradient-text">IC</span>
           </div>
-          <div class="flex flex-col">
-            <span class="font-serif text-xl font-bold tracking-[0.2em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
-            <span class="text-[9px] tracking-[0.3em] uppercase text-brand-amber font-medium">Haute Parfumerie</span>
-          </div>
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.18em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
         </a>
 
-        <div class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
-          <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
-          <a href="index.html#bestsellers" class="hover:text-brand-gold transition-colors">All Perfumes</a>
-          <a href="fifty-shades.html" class="text-brand-gold font-bold">Fifty Shades</a>
-          <a href="teen-hug.html" class="hover:text-brand-gold transition-colors">Teen Hug</a>
-          <a href="love-drop.html" class="hover:text-brand-gold transition-colors">Love Drop</a>
-        </div>
+        <!-- Desktop Navigation: ONLY Fragrances, Reviews, Cart -->
+        <div class="flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
+          <a href="index.html#bestsellers" class="hover:text-brand-gold transition-colors">Fragrances</a>
+          <a href="#reviews" class="hover:text-brand-gold transition-colors">Reviews</a>
 
-        <div class="flex items-center space-x-4">
-          <a href="https://wa.me/919625244683?text=Hi%20Indian%20Celebritie%2C%20I%20have%20an%20inquiry%20about%20Fifty%20Shades%20Perfume." target="_blank" class="hidden lg:flex items-center space-x-2 text-xs uppercase tracking-wider text-stone-300 hover:text-brand-gold py-2 px-3 rounded-full border border-stone-800">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>VIP Desk: +91 96252 44683</span>
-          </a>
-
-          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md">
+          <!-- Cart Button -->
+          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md flex items-center space-x-1.5" title="View Scent Cart">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            <span class="hidden sm:inline text-[11px] font-bold uppercase tracking-wider text-brand-gold">Cart</span>
             <span class="cart-badge-count absolute -top-1 -right-1 bg-brand-gold text-brand-noir font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-lg">1</span>
           </button>
         </div>
@@ -116,18 +115,19 @@
   <!-- 3. BREADCRUMBS -->
   <!-- ========================================================================= -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-stone-500">
-    <a href="index.html" class="hover:text-brand-noir">Home</a>
+    <a href="index.html" class="hover:text-brand-noir transition-colors">Home</a>
     <span class="mx-2">/</span>
-    <a href="index.html#bestsellers" class="hover:text-brand-noir">Unisex Signatures</a>
+    <a href="index.html#bestsellers" class="hover:text-brand-noir transition-colors">Fragrances</a>
     <span class="mx-2">/</span>
     <span class="text-brand-noir font-bold">Fifty Shades Eau De Parfum (100ml)</span>
   </div>
 
-  <!-- ========================================================================= -->
-  <!-- 4. PRODUCT DETAIL HERO -->
-  <!-- ========================================================================= -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    
+    <!-- ========================================================================= -->
+    <!-- SECTION 1: PRODUCT & PRICING ENGINE -->
+    <!-- ========================================================================= -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
       
       <!-- Left Column: Gallery Stage -->
       <div class="lg:col-span-7 flex flex-col items-center">
@@ -146,22 +146,22 @@
                class="w-full h-full object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition-all duration-300 group-hover:scale-105 cursor-zoom-in">
         </div>
 
-        <!-- Thumbnail Row (5 Packshots) -->
+        <!-- Thumbnail Row (Shop Owner Packshots) -->
         <div class="grid grid-cols-5 gap-3 mt-4 w-full max-w-lg">
-          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_2.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/fifty-shades/product_shot_2.jpg" alt="Thumb 1" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_2.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Studio Packshot">
+            <img src="public/assets/products/fifty-shades/product_shot_2.jpg" alt="Fifty Shades Shot 2" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_1.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/fifty-shades/product_shot_1.jpg" alt="Thumb 2" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_1.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Lifestyle View">
+            <img src="public/assets/products/fifty-shades/product_shot_1.jpg" alt="Fifty Shades Shot 1" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/bottle_square.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/bottle_square.jpg" alt="Thumb 3" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/bottle_square.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Iconic Logo Flacon">
+            <img src="public/assets/products/bottle_square.jpg" alt="Flacon Square" class="w-full h-14 object-contain" onerror="this.src='public/assets/products/fifty-shades/product_shot_3.jpg'">
           </button>
-          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_5.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/fifty-shades/product_shot_5.jpg" alt="Thumb 4" class="w-full h-14 object-cover">
+          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_4.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Luxury Box Packaging">
+            <img src="public/assets/products/fifty-shades/product_shot_4.jpg" alt="Fifty Shades Shot 4" class="w-full h-14 object-contain">
           </button>
-          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_3.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105">
-            <img src="public/assets/products/fifty-shades/product_shot_3.jpg" alt="Thumb 5" class="w-full h-14 object-contain">
+          <button onclick="changeMainImage('public/assets/products/fifty-shades/product_shot_3.jpg', this)" class="thumb-btn border border-[#DFD3BB] hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-white shadow-sm transition-all hover:scale-105" title="Flacon Silhouette">
+            <img src="public/assets/products/fifty-shades/product_shot_3.jpg" alt="Fifty Shades Shot 3" class="w-full h-14 object-contain">
           </button>
         </div>
       </div>
@@ -199,7 +199,7 @@
           </p>
         </div>
 
-        <!-- Edition Selector -->
+        <!-- Edition Selector (1x vs 2x) -->
         <div class="mb-6">
           <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-3">Select Edition</label>
           <div class="grid grid-cols-2 gap-3.5">
@@ -260,151 +260,360 @@
 
       </div>
 
-    </div>
+    </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. OLFACTORY PYRAMID -->
+    <!-- SECTION 2: PRODUCT SPECIFICATIONS & OFFICIAL AMAZON LISTING INFO -->
     <!-- ========================================================================= -->
     <section class="mt-20 pt-16 border-t border-[#E2D5BE]">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Olfactory Breakdown</span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">The Three Gourmand Acts</h2>
+        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Product Details & Specifications</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">Amazon Catalog Specifications</h2>
+        <p class="text-xs text-stone-500 mt-2">Direct product specifications and feature details as verified on Amazon India</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-7 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-1">Act 01 • Top Notes</div>
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Bold Roasted Coffee & Pink Pepper</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            Freshly ground roasted coffee beans collide with fiery pink pepper and bergamot, commanding room attention within seconds.
-          </p>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Store Owner Product Imagery Showcase -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-white p-5 rounded-2xl border border-[#DFD3BB] shadow-sm">
+            <span class="text-[10px] font-bold text-brand-gold uppercase tracking-widest block mb-2">Official Store Assets</span>
+            <div class="aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] p-4 flex items-center justify-center">
+              <img src="public/assets/products/fifty-shades/product_shot_1.jpg" alt="Fifty Shades Lifestyle" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="text-center mt-3">
+              <h4 class="font-serif text-lg font-bold text-stone-900">Fifty Shades Eau De Parfum 100ml</h4>
+              <p class="text-[11px] text-stone-500">Indian Celebritie Official Flacon & Presentation Packaging</p>
+            </div>
+          </div>
+
+          <!-- Secondary Owner Shots Grid -->
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-white p-3 rounded-xl border border-[#DFD3BB] shadow-sm text-center">
+              <div class="aspect-square rounded-lg overflow-hidden bg-[#FAF7F2] p-2 flex items-center justify-center mb-2">
+                <img src="public/assets/products/fifty-shades/product_shot_4.jpg" alt="Fifty Shades Packaging" class="w-full h-full object-contain">
+              </div>
+              <span class="text-[10px] font-bold text-stone-800">Presentation Box</span>
+            </div>
+            <div class="bg-white p-3 rounded-xl border border-[#DFD3BB] shadow-sm text-center">
+              <div class="aspect-square rounded-lg overflow-hidden bg-[#FAF7F2] p-2 flex items-center justify-center mb-2">
+                <img src="public/assets/products/fifty-shades/product_shot_5.jpg" alt="Fifty Shades Notes" class="w-full h-full object-contain">
+              </div>
+              <span class="text-[10px] font-bold text-stone-800">Artisan Blending</span>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white p-7 rounded-2xl border-2 border-brand-gold/60 shadow-md">
-          <div class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-1">Act 02 • Heart Notes</div>
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">White Jasmine & Orange Blossom</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            Sensual night-blooming white jasmine balances the dark coffee intensity, radiating an alluring unisex sweetness and elegance.
-          </p>
+        <!-- Right: Technical Specification Table & Feature Bullets -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Key Feature Bullets from Amazon -->
+          <div class="bg-white p-7 rounded-2xl border border-[#DFD3BB] shadow-sm">
+            <h3 class="font-serif text-xl font-bold text-stone-900 mb-4 flex items-center">
+              <span class="w-2 h-2 rounded-full bg-brand-gold mr-2.5"></span>
+              Key Product Highlights
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Rich coffee top note</strong> for a bold and unforgettable first impression.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Creamy Bourbon vanilla</strong> adds intoxicating warmth and smooth gourmand sweetness.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>White floral heart</strong> (Jasmine & Orange Blossom) perfectly balances intensity with elegance.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Long lasting formula</strong> engineered for relentless 8+ hours all-day freshness and projection.</span>
+              </li>
+              <li class="flex items-start text-xs text-stone-700 leading-relaxed">
+                <svg class="w-4 h-4 text-emerald-600 mr-2.5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Deep signature scent</strong> crafted with modern luxury appeal for unisex confidence.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technical Specs Table from Amazon -->
+          <div class="bg-white rounded-2xl border border-[#DFD3BB] shadow-sm overflow-hidden">
+            <div class="p-5 border-b border-[#E2D5BE] bg-[#FDFBF7] flex justify-between items-center">
+              <h3 class="font-serif text-lg font-bold text-stone-900">Technical Specifications</h3>
+              <span class="text-[10px] font-bold text-brand-gold uppercase tracking-wider">ASIN: B0FFGR832H</span>
+            </div>
+            <div class="p-4 sm:p-6 overflow-x-auto">
+              <table class="w-full text-xs text-left spec-table">
+                <tbody>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800 w-1/3">Item Form</td>
+                    <td class="py-3 px-4 text-stone-600">Liquid (Eau De Parfum)</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Scent Notes</td>
+                    <td class="py-3 px-4 text-stone-600">Coffee, Pink Pepper, Vanilla, White Flowers</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Scent Duration</td>
+                    <td class="py-3 px-4 text-emerald-700 font-bold">8+ Hours Sillage Guaranteed</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Item Volume</td>
+                    <td class="py-3 px-4 text-stone-600">100 Millilitres (3.4 fl. oz.)</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Item Weight</td>
+                    <td class="py-3 px-4 text-stone-600">300 Grams</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Manufacturer</td>
+                    <td class="py-3 px-4 text-stone-600">Indian Celebritie</td>
+                  </tr>
+                  <tr class="border-b border-[#EAE3D2]">
+                    <td class="py-3 px-4 font-bold text-stone-800">Part Number</td>
+                    <td class="py-3 px-4 text-stone-600 font-mono">Fifty Shades</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 font-bold text-stone-800">Country of Origin</td>
+                    <td class="py-3 px-4 text-stone-600">India (Pan-India Express Dispatch)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Olfactory Breakdown Summary -->
+          <div class="grid grid-cols-3 gap-3 pt-2">
+            <div class="bg-white p-4 rounded-xl border border-[#DFD3BB] text-center">
+              <span class="text-[9px] font-bold text-brand-gold uppercase tracking-widest block mb-1">Top Notes</span>
+              <h5 class="text-xs font-bold text-stone-900">Roasted Coffee</h5>
+              <p class="text-[10px] text-stone-500 mt-1">Pink Pepper & Bergamot</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border-2 border-brand-gold/60 text-center">
+              <span class="text-[9px] font-bold text-brand-gold uppercase tracking-widest block mb-1">Heart Notes</span>
+              <h5 class="text-xs font-bold text-stone-900">White Jasmine</h5>
+              <p class="text-[10px] text-stone-500 mt-1">Orange Blossom</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl border border-[#DFD3BB] text-center">
+              <span class="text-[9px] font-bold text-brand-gold uppercase tracking-widest block mb-1">Base Notes</span>
+              <h5 class="text-xs font-bold text-stone-900">Bourbon Vanilla</h5>
+              <p class="text-[10px] text-stone-500 mt-1">Warm Cedar & Amber</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="bg-white p-7 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="text-[10px] font-bold text-brand-gold uppercase tracking-widest mb-1">Act 03 • Base Notes</div>
-          <h3 class="font-serif text-xl font-bold text-stone-900 mb-3">Bourbon Vanilla & Warm Amber</h3>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            Velvety Madagascar vanilla pods meet Virginian cedarwood and golden amber for a hypnotic, long-lasting 8+ hour sillage.
-          </p>
-        </div>
       </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. REAL AMAZON CUSTOMER REVIEWS & PHOTOS -->
+    <!-- SECTION 3: REAL AMAZON CUSTOMER REVIEWS & CLICKABLE PHOTOS -->
     <!-- ========================================================================= -->
-    <section class="mt-20 pt-16 border-t border-[#E2D5BE]">
-      <div class="flex flex-col sm:flex-row items-baseline justify-between mb-8">
+    <section id="reviews" class="mt-20 pt-16 border-t border-[#E2D5BE]">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 pb-4 border-b border-[#E2D5BE] gap-4">
         <div>
-          <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Verified Proof</span>
-          <h2 class="font-serif text-3xl font-normal text-brand-noir">Amazon Customer Reviews</h2>
+          <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Authentic Amazon Proof</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">Amazon Customer Reviews</h2>
+          <div class="flex items-center space-x-2 text-amber-500 font-bold text-sm mt-1">
+            <span>★★★★★ 4.9 Rating</span>
+            <span class="text-stone-400">•</span>
+            <span class="text-stone-600 font-normal">Real Amazon India verified buyers</span>
+          </div>
         </div>
-        <div class="flex items-center space-x-2 text-amber-500 font-bold text-sm mt-2 sm:mt-0">
-          <span>★★★★★ 4.9 Rating</span>
-          <span class="text-stone-400">•</span>
-          <span class="text-stone-600 font-normal">Real Amazon buyers</span>
+
+        <!-- View Reviews on Amazon Button -->
+        <a href="https://www.amazon.in/Indian-Celebritie-Lasting-Perfume-Vanilla/dp/B0FFGR832H" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center space-x-2.5 px-6 py-3 rounded-full bg-[#131921] hover:bg-[#232F3E] text-white border border-[#FF9900]/80 text-xs font-bold transition-all shadow-md group">
+          <span class="text-[#FF9900] font-black text-sm">amazon</span>
+          <span class="text-stone-200 group-hover:text-white">View Reviews on Amazon</span>
+          <svg class="w-4 h-4 text-[#FF9900] transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </div>
+
+      <!-- Customer Photos Uploaded on Amazon (Clickable for Modal Lightbox) -->
+      <div class="mb-10 bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-xs uppercase tracking-wider text-stone-800 font-bold flex items-center">
+            <svg class="w-4 h-4 text-brand-gold mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Photos Uploaded by Amazon Customers (Click to Enlarge):
+          </h4>
+          <span class="text-[10px] text-stone-500 font-medium">Click any photo to open full view</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+          <div onclick="openReviewLightbox('public/assets/products/fifty-shades/reviews/customer_review_0_0.jpg', 'Fifty Shades customer photo by Priyanshu Singh')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/fifty-shades/reviews/customer_review_0_0.jpg" alt="Fifty Shades Customer Review 1" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/fifty-shades/reviews/customer_review_3_1.jpg', 'Fifty Shades flacon unboxing on Amazon')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/fifty-shades/reviews/customer_review_3_1.jpg" alt="Fifty Shades Customer Review 2" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/fifty-shades/reviews/customer_review_5_2.jpg', 'Fifty Shades 10hr+ longevity proof by Anshuman')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/fifty-shades/reviews/customer_review_5_2.jpg" alt="Fifty Shades Customer Review 3" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/fifty-shades/reviews/customer_review_6_3.jpg', 'Fifty Shades, Teen Hug & Love Drop Trio by Abhishek Anand')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/fifty-shades/reviews/customer_review_6_3.jpg" alt="Fifty Shades Customer Review 4" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/fifty-shades/reviews/customer_review_6_4.jpg', 'Fifty Shades 1-month test rating by Ankit (9.5/10)')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/fifty-shades/reviews/customer_review_6_4.jpg" alt="Fifty Shades Customer Review 5" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
+
+          <div onclick="openReviewLightbox('public/assets/products/fifty-shades/reviews/customer_review_7_5.jpg', 'Fifty Shades packaging box verified photo')" 
+               class="group relative aspect-square rounded-xl overflow-hidden bg-[#FAF7F2] border border-[#DFD3BB] shadow-sm cursor-pointer hover:border-brand-gold hover:shadow-md transition-all">
+            <img src="public/assets/products/fifty-shades/reviews/customer_review_7_5.jpg" alt="Fifty Shades Customer Review 6" class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white text-xs font-bold bg-black/60 px-2 py-1 rounded-full flex items-center space-x-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+                <span>Zoom</span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Customer Photos Strip -->
-      <div class="mb-10">
-        <h4 class="text-xs uppercase tracking-wider text-stone-700 font-bold mb-3">Customer Photos Uploaded on Amazon:</h4>
-        <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/fifty-shades/reviews/customer_review_0_0.jpg" alt="Photo 1" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/fifty-shades/reviews/customer_review_3_1.jpg" alt="Photo 2" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/fifty-shades/reviews/customer_review_5_2.jpg" alt="Photo 3" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/fifty-shades/reviews/customer_review_6_3.jpg" alt="Photo 4" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/fifty-shades/reviews/customer_review_6_4.jpg" alt="Photo 5" class="w-full h-full object-cover">
-          </div>
-          <div class="aspect-square rounded-xl overflow-hidden bg-white border border-[#DFD3BB] shadow-sm">
-            <img src="public/assets/products/fifty-shades/reviews/customer_review_7_5.jpg" alt="Photo 6" class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-
-      <!-- Review Cards -->
+      <!-- Verified Amazon Review Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"A woman chased me down the street to tell me I smell amazing"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "I LOVE this fragrance. I’ve been reaching for this scent lately more than usual and it’s because it makes me happy when I smell it. Prepare to receive compliments when you wear this fragrance. A woman chased me down the street to tell me I smell amazing."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"A woman chased me down the street to tell me I smell amazing"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "I LOVE this fragrance. I’ve been reaching for this scent lately more than usual and it’s because it makes me happy when I smell it. Prepare to receive compliments when you wear this fragrance. A woman chased me down the street to tell me I smell amazing."
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Priyanshu Singh • Reviewed on 23 July 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Priyanshu Singh</span>
+            <span>Reviewed on 23 July 2025</span>
+          </div>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"Adorable fragrance, looks like too expensive"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "Adorable fragrance, i can say that this product is awesome and I loved it. And is long lasting , and looks like too expensive."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"Looks like too expensive, adorable fragrance"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "Adorable fragrance, i can say that this product is awesome and I loved it. And is long lasting , and looks like too expensive."
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Ajit Kumar Singh • Reviewed on 21 July 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Ajit Kumar Singh</span>
+            <span>Reviewed on 21 July 2025</span>
+          </div>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"Smell nice and its long lasting almost 10 hr+"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "Smell nice and its long lasting almost 10 hr+. Great projection without giving headaches."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"Long lasting almost 10 hr+"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "Smell nice and its long lasting almost 10 hr+"
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Anshuman s. • Reviewed on 26 July 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Anshuman S.</span>
+            <span>Reviewed on 26 July 2025</span>
+          </div>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm">
-          <div class="flex items-center justify-between mb-2">
-            <div class="flex text-amber-500 text-sm">★★★★★</div>
-            <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+        <div class="bg-white p-6 rounded-2xl border border-[#DFD3BB] shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex text-amber-500 text-sm">★★★★★</div>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded-full">Verified Amazon Purchase</span>
+            </div>
+            <h4 class="text-xs font-bold text-stone-900 mb-2">"1 Month Later: Fragrance 9/10, Quality 9.5/10"</h4>
+            <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
+              "This review is used for 1 month later, out of 10: Fragrance: 9/10, Quality: 9.5/10, Long lasting: 9/10, Value for money: 9.5/10."
+            </p>
           </div>
-          <h4 class="text-xs font-bold text-stone-900 mb-2">"Quality: 9.5/10, Long lasting: 9/10, Value for money: 9.5/10"</h4>
-          <p class="text-xs text-stone-600 leading-relaxed italic mb-4">
-            "This review is used for 1 month later: Fragrance: 9/10, Quality: 9.5/10, Long lasting: 9/10, Value for money: 9.5/10."
-          </p>
-          <div class="text-[11px] text-stone-500 font-medium">Ankit • Reviewed on 20 July 2025</div>
+          <div class="pt-3 border-t border-[#EAE3D2] flex justify-between items-center text-[11px] text-stone-500">
+            <span class="font-bold text-stone-800">Ankit</span>
+            <span>Reviewed on 20 July 2025</span>
+          </div>
         </div>
+
+      </div>
+
+      <!-- Bottom link to Amazon -->
+      <div class="text-center mt-8">
+        <a href="https://www.amazon.in/Indian-Celebritie-Lasting-Perfume-Vanilla/dp/B0FFGR832H" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center space-x-2 text-xs font-bold text-stone-700 hover:text-brand-noir underline decoration-brand-gold underline-offset-4">
+          <span>Read all verified customer reviews directly on Amazon.in (ASIN: B0FFGR832H)</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
       </div>
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. COMPLETE THE COLLECTION (CROSS SELL) -->
+    <!-- SECTION 4: SUGGESTIONS FOR OTHER COLLECTION (CROSS SELL) -->
     <!-- ========================================================================= -->
     <section class="mt-20 pt-16 border-t border-[#E2D5BE]">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">Signature Collection</span>
         <h2 class="font-serif text-3xl font-normal text-brand-noir">You May Also Admire</h2>
+        <p class="text-xs text-stone-500 mt-1">Complete your luxury olfactory wardrobe with our signature creations</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        
+        <!-- Love Drop Cross-sell -->
         <div class="bg-white p-6 rounded-3xl border border-[#DFD3BB] shadow-md flex flex-col justify-between group hover:border-brand-gold transition-all">
           <div>
             <div class="aspect-square rounded-2xl overflow-hidden bg-[#FAF7F2] p-4 mb-4 flex items-center justify-center">
-              <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Love Drop" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+              <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Love Drop Eau De Parfum" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
             </div>
             <div class="text-[10px] text-brand-gold font-bold uppercase tracking-wider">Signature Floral For Her</div>
             <h3 class="font-serif text-xl font-bold text-stone-900 mt-1">Love Drop Eau De Parfum (100ml)</h3>
@@ -412,7 +621,7 @@
             <div class="flex items-baseline space-x-2 mt-3">
               <span class="font-bold text-lg text-brand-noir">₹825</span>
               <span class="text-xs text-stone-400 line-through">₹1,499</span>
-              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">45% OFF</span>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded">45% OFF</span>
             </div>
           </div>
           <div class="mt-5 grid grid-cols-2 gap-2">
@@ -425,10 +634,11 @@
           </div>
         </div>
 
+        <!-- Teen Hug Cross-sell -->
         <div class="bg-white p-6 rounded-3xl border border-[#DFD3BB] shadow-md flex flex-col justify-between group hover:border-brand-gold transition-all">
           <div>
             <div class="aspect-square rounded-2xl overflow-hidden bg-[#FAF7F2] p-4 mb-4 flex items-center justify-center">
-              <img src="public/assets/products/teen-hug/product_shot_1.jpg" alt="Teen Hug" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+              <img src="public/assets/products/teen-hug/product_shot_1.jpg" alt="Teen Hug Eau De Parfum" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
             </div>
             <div class="text-[10px] text-brand-gold font-bold uppercase tracking-wider">Signature Unisex Oud</div>
             <h3 class="font-serif text-xl font-bold text-stone-900 mt-1">Teen Hug 100ml Eau De Parfum</h3>
@@ -436,7 +646,7 @@
             <div class="flex items-baseline space-x-2 mt-3">
               <span class="font-bold text-lg text-brand-noir">₹1,337</span>
               <span class="text-xs text-stone-400 line-through">₹2,499</span>
-              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">46% OFF</span>
+              <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 border border-emerald-300 px-2 py-0.5 rounded">46% OFF</span>
             </div>
           </div>
           <div class="mt-5 grid grid-cols-2 gap-2">
@@ -448,13 +658,37 @@
             </a>
           </div>
         </div>
+
       </div>
     </section>
 
   </main>
 
   <!-- ========================================================================= -->
-  <!-- 8. SHARED SLIDE-OUT CART DRAWER -->
+  <!-- MODAL LIGHTBOX FOR CUSTOMER REVIEW PHOTOS -->
+  <!-- ========================================================================= -->
+  <div id="review-lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="closeReviewLightbox(event)">
+    <div class="relative max-w-3xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeReviewLightbox()" class="absolute -top-12 right-0 p-2 text-stone-400 hover:text-white rounded-full bg-white/10 hover:bg-white/20 transition-colors" title="Close (Esc)">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <!-- Lightbox Image Container -->
+      <div class="w-full rounded-2xl overflow-hidden border border-brand-gold/40 bg-brand-noir shadow-2xl flex items-center justify-center">
+        <img id="lightbox-img" src="" alt="Customer Review Photo" class="max-h-[75vh] w-auto max-w-full object-contain">
+      </div>
+
+      <!-- Caption -->
+      <div class="w-full text-center mt-3 text-xs text-stone-300 flex items-center justify-between px-2">
+        <span id="lightbox-caption" class="italic">Verified Amazon Review Photo</span>
+        <span class="text-brand-gold text-[10px] font-bold tracking-widest uppercase">Indian Celebritie Customer Proof</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- SHARED SLIDE-OUT CART DRAWER -->
   <!-- ========================================================================= -->
   <div id="cart-drawer-overlay" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
@@ -556,11 +790,11 @@
   </aside>
 
   <!-- ========================================================================= -->
-  <!-- 9. FOOTER -->
+  <!-- FOOTER -->
   <!-- ========================================================================= -->
   <footer class="bg-brand-noir text-stone-400 border-t border-brand-gold/20 py-12 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-      <div class="font-serif text-xl text-white tracking-[0.2em] uppercase">Indian Celebritie Haute Parfumerie</div>
+      <div class="font-serif text-xl text-white tracking-[0.2em] uppercase">Indian Celebritie</div>
       <p class="text-stone-400 text-xs max-w-md mx-auto">
         Crafted with pure parfum oil concentrations for relentless longevity. Pan-India Express delivery.
       </p>
@@ -572,7 +806,7 @@
         <a href="https://wa.me/919625244683" target="_blank">WhatsApp Desk</a>
       </div>
       <div class="pt-6 border-t border-stone-800 text-[11px] text-stone-500">
-        © 2026 Indian Celebritie Perfumes. Direct Concierge: +91 96252 44683
+        © 2026 Indian Celebritie. Direct Concierge: +91 96252 44683
       </div>
     </div>
   </footer>
@@ -642,6 +876,38 @@
     function handleProductBuyNow() {
       addToCart('fifty-shades', 1, currentSelectedPrice, currentSelectedTitle);
     }
+
+    // Modal Lightbox Functions
+    function openReviewLightbox(src, caption) {
+      const modal = document.getElementById('review-lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      
+      img.src = src;
+      cap.textContent = caption || 'Verified Amazon Customer Review Photo';
+      
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+      }, 10);
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeReviewLightbox(e) {
+      if (e && e.target !== e.currentTarget && !e.target.closest('button')) return;
+      const modal = document.getElementById('review-lightbox-modal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }, 250);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeReviewLightbox();
+      }
+    });
   </script>
 
 </body>

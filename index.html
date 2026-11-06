@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indian Celebritie | Luxury Haute Parfumerie & Signature Fragrance House</title>
+  <title>Indian Celebritie | Luxury Fragrance House</title>
   <meta name="description" content="Shop luxury Indian perfumes by Indian Celebritie. Fifty Shades, Love Drop, and Teen Hug. Crafted with pure parfum oil concentrations for 8+ hours sillage.">
   
   <!-- Google Fonts -->
@@ -38,18 +38,18 @@
             }
           },
           animation: {
-            'marquee-ltr': 'marqueeLtr 32s linear infinite',
-            'marquee-rtl': 'marqueeRtl 28s linear infinite',
+            'marquee-continuous': 'marqueeContinuous 30s linear infinite',
+            'offers-continuous': 'offersContinuous 24s linear infinite',
             'pulse-subtle': 'pulseSubtle 2.5s infinite',
           },
           keyframes: {
-            marqueeLtr: {
-              '0%': { transform: 'translateX(-50%)' },
-              '100%': { transform: 'translateX(0%)' },
-            },
-            marqueeRtl: {
+            marqueeContinuous: {
               '0%': { transform: 'translateX(0%)' },
               '100%': { transform: 'translateX(-50%)' },
+            },
+            offersContinuous: {
+              '0%': { transform: 'translateX(-50%)' },
+              '100%': { transform: 'translateX(0%)' },
             },
             pulseSubtle: {
               '0%, 100%': { opacity: 1, transform: 'scale(1)' },
@@ -77,7 +77,7 @@
       box-shadow: 0 0 30px rgba(212, 175, 55, 0.45);
     }
     .glass-dark {
-      background: rgba(12, 10, 9, 0.9);
+      background: rgba(12, 10, 9, 0.92);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(212, 175, 55, 0.2);
     }
@@ -103,57 +103,44 @@
 <body class="bg-brand-noir text-brand-cream font-sans antialiased selection:bg-brand-gold selection:text-brand-noir overflow-x-hidden">
 
   <!-- ========================================================================= -->
-  <!-- 1. BELLA VITA STYLE PROMOTIONAL COUNTDOWN HEADER -->
+  <!-- 1. TOP ANNOUNCEMENT TICKER WITH COUNTDOWN -->
   <!-- ========================================================================= -->
-  <div class="bg-gradient-to-r from-brand-festiveWine via-brand-festiveRed to-brand-festiveWine text-white py-2.5 px-4 text-xs font-semibold tracking-wider text-center flex items-center justify-center space-x-3 border-b border-brand-gold/30 relative z-50 shadow-md">
+  <div class="bg-gradient-to-r from-brand-festiveWine via-brand-festiveRed to-brand-festiveWine text-white py-2 px-4 text-xs font-semibold tracking-wider text-center flex items-center justify-center space-x-3 border-b border-brand-gold/30 relative z-50 shadow-md">
     <span class="inline-flex items-center space-x-1.5 text-brand-champagne">
       <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
       <span class="uppercase tracking-widest font-bold">Festive Flash Sale is Live:</span>
       <span class="italic font-serif">Hurry!</span>
     </span>
-    <div class="inline-flex items-center space-x-1.5 bg-black/40 px-3 py-1 rounded-full border border-brand-gold/40 text-[11px] font-mono text-brand-gold font-bold">
+    <div class="inline-flex items-center space-x-1.5 bg-black/40 px-3 py-0.5 rounded-full border border-brand-gold/40 text-[11px] font-mono text-brand-gold font-bold">
       <span id="timer-hours">02h</span> : <span id="timer-mins">45m</span> : <span id="timer-secs">30s</span>
     </div>
     <span class="hidden md:inline text-brand-champagne/90 font-medium">| FREE Pan-India Courier on Every Order</span>
   </div>
 
   <!-- ========================================================================= -->
-  <!-- 2. NAVBAR (WITH MULTI-PAGE & PRODUCT LINKS) -->
+  <!-- 2. NAVBAR (STRICT SPEC: LOGO, INDIAN CELEBRITIE, FRAGRANCES, REVIEWS, CART) -->
   <!-- ========================================================================= -->
   <nav class="sticky top-0 z-40 glass-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo -->
+        <!-- Indian Celebritie Logo & Name Only -->
         <a href="index.html" class="flex items-center space-x-3.5 group">
           <div class="w-11 h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md group-hover:scale-105 transition-transform">
             <span class="font-serif text-lg font-bold gold-gradient-text">IC</span>
           </div>
-          <div class="flex flex-col">
-            <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.2em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
-            <span class="text-[9px] tracking-[0.32em] uppercase text-brand-amber font-medium">Haute Parfumerie</span>
-          </div>
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.18em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
         </a>
 
-        <!-- Desktop Navigation -->
-        <div class="hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
-          <a href="#bestsellers" class="hover:text-brand-gold transition-colors">All Fragrances</a>
-          <a href="fifty-shades.html" class="hover:text-brand-gold transition-colors">Fifty Shades (Coffee)</a>
-          <a href="love-drop.html" class="hover:text-brand-gold transition-colors">Love Drop (Floral)</a>
-          <a href="teen-hug.html" class="hover:text-brand-gold transition-colors">Teen Hug (Oud)</a>
+        <!-- Desktop Navigation: ONLY Fragrances, Reviews, Cart -->
+        <div class="flex items-center space-x-8 text-xs uppercase tracking-widest font-semibold text-stone-300">
+          <a href="#bestsellers" class="hover:text-brand-gold transition-colors">Fragrances</a>
           <a href="#reviews" class="hover:text-brand-gold transition-colors">Reviews</a>
-          <a href="#concierge" class="hover:text-brand-gold transition-colors">Bulk / Gifting</a>
-        </div>
 
-        <!-- Right VIP Desk & Cart Trigger -->
-        <div class="flex items-center space-x-3 sm:space-x-4">
-          <a href="https://wa.me/919625244683?text=Hi%20Indian%20Celebritie%2C%20I%20would%20like%20to%20order%20from%20your%20perfume%20collection." target="_blank" class="hidden sm:flex items-center space-x-2 text-xs uppercase tracking-wider text-stone-300 hover:text-brand-gold py-2 px-3.5 rounded-full border border-stone-800 hover:border-brand-gold/40">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>VIP Desk: +91 96252 44683</span>
-          </a>
-
-          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md">
+          <!-- Cart Button -->
+          <button onclick="toggleCartDrawer(true)" class="relative p-2.5 rounded-full bg-brand-charcoal border border-brand-gold/40 text-brand-champagne hover:text-white shadow-md flex items-center space-x-1.5" title="View Scent Cart">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            <span class="hidden sm:inline text-[11px] font-bold uppercase tracking-wider text-brand-gold">Cart</span>
             <span class="cart-badge-count absolute -top-1 -right-1 bg-brand-gold text-brand-noir font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-lg">1</span>
           </button>
         </div>
@@ -163,57 +150,7 @@
   </nav>
 
   <!-- ========================================================================= -->
-  <!-- 3. BELLA VITA STYLE VALUE TIER BANNERS (BUY 1, BUY 2, BUY 3 OFFERS) -->
-  <!-- ========================================================================= -->
-  <section class="bg-gradient-to-b from-[#18080A] to-brand-noir py-6 border-b border-brand-gold/20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        
-        <!-- Offer 1 -->
-        <div class="p-4 rounded-2xl bg-gradient-to-r from-brand-charcoal to-[#221715] border border-brand-gold/30 flex items-center space-x-4 shadow-lg group hover:border-brand-gold transition-all">
-          <div class="w-12 h-12 rounded-full bg-brand-festiveRed border border-brand-gold/50 flex flex-col items-center justify-center text-white shrink-0">
-            <span class="text-[9px] uppercase font-bold tracking-wider">BUY</span>
-            <span class="text-sm font-black text-brand-gold leading-none">1</span>
-          </div>
-          <div>
-            <div class="text-xs font-bold text-white uppercase tracking-wider">Flat 45% - 46% OFF</div>
-            <div class="text-[11px] text-stone-400">On any 100ml Eau De Parfum flacon</div>
-          </div>
-        </div>
-
-        <!-- Offer 2 -->
-        <div class="p-4 rounded-2xl bg-gradient-to-r from-brand-charcoal to-[#221715] border border-brand-gold/30 flex items-center space-x-4 shadow-lg group hover:border-brand-gold transition-all">
-          <div class="w-12 h-12 rounded-full bg-brand-festiveRed border border-brand-gold/50 flex flex-col items-center justify-center text-white shrink-0">
-            <span class="text-[9px] uppercase font-bold tracking-wider">BUY</span>
-            <span class="text-sm font-black text-brand-gold leading-none">2</span>
-          </div>
-          <div>
-            <div class="text-xs font-bold text-white uppercase tracking-wider">Extra ₹175 OFF + Travel Bag</div>
-            <div class="text-[11px] text-stone-400">Order any Duo Pack for ₹2,499</div>
-          </div>
-        </div>
-
-        <!-- Offer 3 -->
-        <div class="p-4 rounded-2xl bg-gradient-to-r from-[#2B0E12] to-brand-charcoal border-2 border-brand-gold flex items-center space-x-4 shadow-xl group hover:scale-[1.02] transition-all">
-          <div class="w-12 h-12 rounded-full bg-brand-gold border border-brand-noir flex flex-col items-center justify-center text-brand-noir shrink-0 font-bold">
-            <span class="text-[9px] uppercase tracking-wider">BUY</span>
-            <span class="text-sm font-black leading-none">3</span>
-          </div>
-          <div class="flex-1">
-            <div class="text-xs font-bold text-brand-champagne uppercase tracking-wider flex items-center justify-between">
-              <span>Complete Signature Trio</span>
-              <span class="text-[9px] bg-emerald-600 text-white px-2 py-0.5 rounded-full font-bold">SAVE ₹3,998</span>
-            </div>
-            <div class="text-[11px] text-stone-300">All 3 Perfumes for just <span class="text-brand-gold font-bold">₹2,499</span></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 4. AMBIENT HERO VIDEO STAGE -->
+  <!-- 3. AMBIENT HERO VIDEO STAGE -->
   <!-- ========================================================================= -->
   <header class="relative w-full min-h-[75vh] lg:min-h-[82vh] flex items-center justify-center overflow-hidden border-b border-brand-gold/20 bg-brand-noir">
     <div class="absolute inset-0 w-full h-full overflow-hidden">
@@ -226,7 +163,7 @@
     <div class="relative z-20 max-w-5xl mx-auto px-4 text-center py-16">
       <div class="inline-flex items-center space-x-2 py-1.5 px-4 rounded-full border border-brand-gold/40 bg-brand-noir/70 backdrop-blur-md mb-6">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span class="text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-champagne">100% Genuine Haute Parfumerie</span>
+        <span class="text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-champagne">100% Genuine Luxury Fragrances</span>
       </div>
 
       <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-wide text-white leading-[1.1] mb-6">
@@ -250,7 +187,98 @@
   </header>
 
   <!-- ========================================================================= -->
-  <!-- 5. BELLA VITA STYLE BESTSELLERS & ALL PRODUCTS DISPLAY GRID -->
+  <!-- 4. CONTINUOUS LEFT-TO-RIGHT MOVING OFFERS STRIP (AFTER HERO SECTION) -->
+  <!-- ========================================================================= -->
+  <section class="bg-gradient-to-r from-[#18080A] via-[#220B10] to-[#18080A] py-5 border-b border-brand-gold/25 overflow-hidden marquee-container">
+    <div class="w-full overflow-hidden">
+      <!-- Continuous Left-to-Right Moving Strip -->
+      <div class="flex whitespace-nowrap animate-offers-continuous marquee-strip space-x-6">
+        
+        <!-- Offer 1 -->
+        <div class="inline-flex items-center space-x-4 p-3.5 px-6 rounded-2xl bg-brand-charcoal/90 border border-brand-gold/40 shadow-lg shrink-0">
+          <div class="w-10 h-10 rounded-full bg-brand-festiveRed border border-brand-gold flex flex-col items-center justify-center text-white shrink-0">
+            <span class="text-[8px] uppercase font-bold">BUY</span>
+            <span class="text-xs font-black text-brand-gold leading-none">1</span>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Flat 45% - 46% OFF Launch Price</div>
+            <div class="text-[10px] text-stone-400">On any 100ml Eau De Parfum flacon</div>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="inline-flex items-center space-x-4 p-3.5 px-6 rounded-2xl bg-brand-charcoal/90 border border-brand-gold/40 shadow-lg shrink-0">
+          <div class="w-10 h-10 rounded-full bg-brand-festiveRed border border-brand-gold flex flex-col items-center justify-center text-white shrink-0">
+            <span class="text-[8px] uppercase font-bold">BUY</span>
+            <span class="text-xs font-black text-brand-gold leading-none">2</span>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Extra ₹175 OFF + Travel Bag</div>
+            <div class="text-[10px] text-stone-400">Order any Duo Pack for ₹2,499</div>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="inline-flex items-center space-x-4 p-3.5 px-6 rounded-2xl bg-[#2B0E12] border-2 border-brand-gold shadow-xl shrink-0">
+          <div class="w-10 h-10 rounded-full bg-brand-gold border border-brand-noir flex flex-col items-center justify-center text-brand-noir shrink-0 font-bold">
+            <span class="text-[8px] uppercase">BUY</span>
+            <span class="text-xs font-black leading-none">3</span>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-brand-champagne uppercase tracking-wider flex items-center space-x-2">
+              <span>Complete Signature Trio</span>
+              <span class="text-[8px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-full font-bold">SAVE ₹3,998</span>
+            </div>
+            <div class="text-[10px] text-stone-300">All 3 Fragrances for just <span class="text-brand-gold font-bold">₹2,499</span></div>
+          </div>
+        </div>
+
+        <!-- REPEATED SET FOR SEAMLESS CIRCULAR LOOP -->
+        <!-- Offer 1 Repeat -->
+        <div class="inline-flex items-center space-x-4 p-3.5 px-6 rounded-2xl bg-brand-charcoal/90 border border-brand-gold/40 shadow-lg shrink-0">
+          <div class="w-10 h-10 rounded-full bg-brand-festiveRed border border-brand-gold flex flex-col items-center justify-center text-white shrink-0">
+            <span class="text-[8px] uppercase font-bold">BUY</span>
+            <span class="text-xs font-black text-brand-gold leading-none">1</span>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Flat 45% - 46% OFF Launch Price</div>
+            <div class="text-[10px] text-stone-400">On any 100ml Eau De Parfum flacon</div>
+          </div>
+        </div>
+
+        <!-- Offer 2 Repeat -->
+        <div class="inline-flex items-center space-x-4 p-3.5 px-6 rounded-2xl bg-brand-charcoal/90 border border-brand-gold/40 shadow-lg shrink-0">
+          <div class="w-10 h-10 rounded-full bg-brand-festiveRed border border-brand-gold flex flex-col items-center justify-center text-white shrink-0">
+            <span class="text-[8px] uppercase font-bold">BUY</span>
+            <span class="text-xs font-black text-brand-gold leading-none">2</span>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-white uppercase tracking-wider">Extra ₹175 OFF + Travel Bag</div>
+            <div class="text-[10px] text-stone-400">Order any Duo Pack for ₹2,499</div>
+          </div>
+        </div>
+
+        <!-- Offer 3 Repeat -->
+        <div class="inline-flex items-center space-x-4 p-3.5 px-6 rounded-2xl bg-[#2B0E12] border-2 border-brand-gold shadow-xl shrink-0">
+          <div class="w-10 h-10 rounded-full bg-brand-gold border border-brand-noir flex flex-col items-center justify-center text-brand-noir shrink-0 font-bold">
+            <span class="text-[8px] uppercase">BUY</span>
+            <span class="text-xs font-black leading-none">3</span>
+          </div>
+          <div>
+            <div class="text-xs font-bold text-brand-champagne uppercase tracking-wider flex items-center space-x-2">
+              <span>Complete Signature Trio</span>
+              <span class="text-[8px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-full font-bold">SAVE ₹3,998</span>
+            </div>
+            <div class="text-[10px] text-stone-300">All 3 Fragrances for just <span class="text-brand-gold font-bold">₹2,499</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. BESTSELLERS & ALL PRODUCTS DISPLAY GRID -->
   <!-- ========================================================================= -->
   <section id="bestsellers" class="py-20 bg-brand-ivory text-brand-noir border-b border-[#E2D5BE]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -271,13 +299,12 @@
         <div class="w-16 h-0.5 bg-brand-gold mx-auto mt-4"></div>
       </div>
 
-      <!-- 4-Card E-Commerce Display Grid (Inspired by Bella Vita Organic Product Cards) -->
+      <!-- 4-Card E-Commerce Display Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- CARD 1: FIFTY SHADES -->
         <div class="product-card prod-bestseller prod-unisex-oud bg-white rounded-3xl p-5 border border-[#DFD3BB] shadow-md flex flex-col justify-between group hover:border-brand-gold hover:shadow-xl transition-all">
           <div>
-            <!-- Badge -->
             <div class="flex items-center justify-between mb-3">
               <span class="text-[9px] font-black uppercase tracking-widest bg-brand-noir text-brand-gold px-2.5 py-1 rounded-full">
                 BESTSELLER
@@ -287,36 +314,30 @@
               </span>
             </div>
 
-            <!-- Product Image -->
             <a href="fifty-shades.html" class="block aspect-square rounded-2xl overflow-hidden bg-[#FAF7F2] p-4 mb-4 flex items-center justify-center">
               <img src="public/assets/products/fifty-shades/product_shot_2.jpg" alt="Fifty Shades Flacon" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
             </a>
 
-            <!-- Star Rating -->
             <div class="flex items-center space-x-1.5 text-xs text-amber-500 font-bold mb-1">
               <span>★ 4.9</span>
               <span class="text-stone-400 font-normal">• (10 Reviews)</span>
             </div>
 
-            <!-- Title & Subtitle -->
             <a href="fifty-shades.html" class="block">
               <h3 class="font-serif text-lg font-bold text-stone-900 group-hover:text-brand-amber transition-colors leading-snug">Fifty Shades EDP (100ml)</h3>
               <p class="text-[11px] text-stone-500 uppercase tracking-wider mt-0.5">Coffee, Vanilla & White Florals</p>
             </a>
 
-            <!-- Savings Chip -->
             <div class="text-[11px] text-emerald-700 font-bold mt-3">
               (Saving ₹1,162.00)
             </div>
 
-            <!-- Price -->
             <div class="flex items-baseline space-x-2 mt-1">
               <span class="font-serif text-2xl font-bold text-brand-noir">₹1,337.00</span>
               <span class="text-xs text-stone-400 line-through">₹2,499.00</span>
             </div>
           </div>
 
-          <!-- Dual Buttons: Add To Cart + View Product -->
           <div class="mt-5 space-y-2">
             <button onclick="addToCart('fifty-shades', 1)" class="w-full py-2.5 rounded-full bg-brand-noir text-brand-gold font-bold text-xs uppercase hover:bg-brand-charcoal transition-colors flex items-center justify-center space-x-1.5">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
@@ -473,7 +494,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 6. VIDEO THEATER (CUSTOMER REEL) -->
+  <!-- 6. VIDEO THEATER -->
   <!-- ========================================================================= -->
   <section class="py-20 bg-brand-dark text-white border-b border-brand-gold/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -534,20 +555,21 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 7. REAL CUSTOMER REVIEWS CONTINUOUS STRIP (MARQUEE) -->
+  <!-- 7. REVIEWS: SEAMLESS CIRCULAR INFINITE MARQUEE STRIP -->
   <!-- ========================================================================= -->
   <section id="reviews" class="py-20 bg-brand-noir border-b border-brand-gold/20 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 mb-10 text-center">
       <span class="text-xs uppercase tracking-widest text-brand-amber font-bold block mb-1">Authentic Amazon Proof</span>
       <h2 class="font-serif text-3xl sm:text-5xl text-white font-normal">Real Reviews from Real Connoisseurs</h2>
+      <p class="text-xs text-stone-400 mt-2">Continuously cycling customer testimonials across India</p>
     </div>
 
-    <!-- Continuous Moving Marquee Strip -->
+    <!-- Seamless Circular Infinite Marquee Strip -->
     <div class="w-full overflow-hidden marquee-container py-3">
-      <div class="flex whitespace-normal animate-marquee-ltr marquee-strip space-x-6">
+      <div class="flex whitespace-normal animate-marquee-continuous marquee-strip space-x-6">
         
         <!-- Review Card 1 (Fifty Shades) -->
-        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between">
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex justify-between items-center mb-2">
               <span class="text-amber-400 text-xs">★★★★★</span>
@@ -564,7 +586,7 @@
         </div>
 
         <!-- Review Card 2 (Love Drop) -->
-        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-pink-500/30 flex flex-col justify-between">
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-pink-500/30 flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex justify-between items-center mb-2">
               <span class="text-amber-400 text-xs">★★★★★</span>
@@ -581,7 +603,7 @@
         </div>
 
         <!-- Review Card 3 (Teen Hug) -->
-        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between">
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex justify-between items-center mb-2">
               <span class="text-amber-400 text-xs">★★★★★</span>
@@ -598,7 +620,7 @@
         </div>
 
         <!-- Review Card 4 (Complete Collection) -->
-        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/50 flex flex-col justify-between">
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/50 flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex justify-between items-center mb-2">
               <span class="text-amber-400 text-xs">★★★★★</span>
@@ -615,7 +637,93 @@
         </div>
 
         <!-- Review Card 5 (Fifty Shades) -->
-        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between">
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-amber-400 text-xs">★★★★★</span>
+              <span class="text-[9px] bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded-full font-bold">Fifty Shades</span>
+            </div>
+            <p class="text-xs text-stone-300 italic leading-relaxed">
+              "Quality: 9.5/10, Long lasting: 9/10, Value for money: 9.5/10. Adorable fragrance that looks and smells like an expensive niche bottle."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-800 text-[11px] text-stone-400 mt-3 flex justify-between">
+            <span class="font-bold text-white">Ankit</span>
+            <span>Amazon Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- EXACT DUPLICATE FOR SEAMLESS CIRCULAR CONTINUOUS LOOP -->
+        <!-- Review Card 1 Repeat -->
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-amber-400 text-xs">★★★★★</span>
+              <span class="text-[9px] bg-emerald-950 text-emerald-400 px-2 py-0.5 rounded-full font-bold">Fifty Shades</span>
+            </div>
+            <p class="text-xs text-stone-300 italic leading-relaxed">
+              "A woman chased me down the street to tell me I smell amazing. Prepare to receive compliments when you wear this fragrance!"
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-800 text-[11px] text-stone-400 mt-3 flex justify-between">
+            <span class="font-bold text-white">Priyanshu Singh</span>
+            <span>Amazon Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review Card 2 Repeat -->
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-pink-500/30 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-amber-400 text-xs">★★★★★</span>
+              <span class="text-[9px] bg-pink-950 text-pink-300 px-2 py-0.5 rounded-full font-bold">Love Drop</span>
+            </div>
+            <p class="text-xs text-stone-300 italic leading-relaxed">
+              "A beautifully balanced perfume with soft floral and warm musky notes. Feels luxurious yet subtle, perfect for day and evening wear."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-800 text-[11px] text-stone-400 mt-3 flex justify-between">
+            <span class="font-bold text-white">Awesome</span>
+            <span>Amazon Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review Card 3 Repeat -->
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-amber-400 text-xs">★★★★★</span>
+              <span class="text-[9px] bg-amber-950 text-amber-300 px-2 py-0.5 rounded-full font-bold">Teen Hug (Oud)</span>
+            </div>
+            <p class="text-xs text-stone-300 italic leading-relaxed">
+              "Great product. Great performance. Easily sticking around for 8+ hours. The kind of fragrance that makes strangers stop and smile."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-800 text-[11px] text-stone-400 mt-3 flex justify-between">
+            <span class="font-bold text-white">Kumar Shrikant</span>
+            <span>Amazon Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review Card 4 Repeat -->
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/50 flex flex-col justify-between shadow-lg">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <span class="text-amber-400 text-xs">★★★★★</span>
+              <span class="text-[9px] bg-brand-gold text-brand-noir px-2 py-0.5 rounded-full font-bold">All 3 Fragrances</span>
+            </div>
+            <p class="text-xs text-stone-300 italic leading-relaxed">
+              "I have bought all 3 sets of perfume (Teen Hug, Fifty Shades & Love Drop). Fragrance is really good and design of packet is ethnic!"
+            </p>
+          </div>
+          <div class="pt-3 border-t border-stone-800 text-[11px] text-stone-400 mt-3 flex justify-between">
+            <span class="font-bold text-white">Abhishek Anand</span>
+            <span>Amazon Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review Card 5 Repeat -->
+        <div class="w-[360px] shrink-0 bg-brand-charcoal p-6 rounded-2xl border border-brand-gold/30 flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex justify-between items-center mb-2">
               <span class="text-amber-400 text-xs">★★★★★</span>
@@ -636,63 +744,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 8. CORPORATE GIFTING & BULK INQUIRY FORM -->
-  <!-- ========================================================================= -->
-  <section id="concierge" class="py-20 bg-brand-ivory text-brand-noir border-b border-[#E2D5BE]">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-10">
-        <span class="text-xs uppercase tracking-widest text-[#8C6D1F] font-bold block mb-1">VIP Concierge</span>
-        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-noir">Wedding Hampers, Corporate & Stockist Orders</h2>
-        <p class="text-xs text-stone-600 mt-2">Bespoke customized fragrance boxes, luxury corporate favors, and wholesale stockist inquiries.</p>
-      </div>
-
-      <div class="bg-white p-8 sm:p-12 rounded-3xl border-2 border-[#E2D5BE] shadow-xl">
-        <form onsubmit="handleInquirySubmit(event)" class="space-y-5">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-1.5">Full Name *</label>
-              <input type="text" required placeholder="e.g. Vikramaditya Singhania" class="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-[#D8C7A3] text-xs outline-none focus:border-brand-gold">
-            </div>
-            <div>
-              <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-1.5">WhatsApp / Phone *</label>
-              <input type="tel" required placeholder="e.g. +91 96252 44683" class="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-[#D8C7A3] text-xs outline-none focus:border-brand-gold">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-1.5">Inquiry Type *</label>
-              <select class="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-[#D8C7A3] text-xs outline-none focus:border-brand-gold">
-                <option>Bulk Corporate Gifting (50+ Units)</option>
-                <option>Wedding Favors & Custom Hampers</option>
-                <option>Retail Stockist & Distribution</option>
-                <option>Order Inquiries & Other</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-1.5">Estimated Units</label>
-              <input type="text" placeholder="e.g. 100 Flacons" class="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-[#D8C7A3] text-xs outline-none focus:border-brand-gold">
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs uppercase tracking-wider text-stone-800 font-bold mb-1.5">Message / Requirements</label>
-            <textarea rows="3" placeholder="Tell us about your event, delivery date, or preferred fragrance..." class="w-full px-4 py-3 rounded-xl bg-[#FAF8F5] border border-[#D8C7A3] text-xs outline-none focus:border-brand-gold"></textarea>
-          </div>
-
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#EAE1CF]">
-            <span class="text-[11px] text-stone-500">Concierge Desk: +91 96252 44683</span>
-            <button type="submit" class="w-full sm:w-auto px-8 py-3.5 btn-shimmer text-brand-noir font-bold text-xs uppercase tracking-widest rounded-full shadow-md">
-              Submit VIP Request
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 9. SHARED SLIDE-OUT CART DRAWER -->
+  <!-- 8. SHARED SLIDE-OUT CART DRAWER -->
   <!-- ========================================================================= -->
   <div id="cart-drawer-overlay" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
 
@@ -794,56 +846,22 @@
   </aside>
 
   <!-- ========================================================================= -->
-  <!-- 10. FLOATING WHATSAPP PILL -->
+  <!-- 9. FOOTER -->
   <!-- ========================================================================= -->
-  <a href="https://wa.me/919625244683?text=Hi%20Indian%20Celebritie%2C%20I%20have%20an%20inquiry%20regarding%20your%20perfume%20collection." 
-     target="_blank" 
-     class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center space-x-2.5 transition-all transform hover:scale-105 border border-emerald-400/50">
-    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-    <span class="hidden sm:inline text-xs font-bold uppercase tracking-wider">VIP Desk • +91 96252 44683</span>
-  </a>
-
-  <!-- ========================================================================= -->
-  <!-- 11. FOOTER -->
-  <!-- ========================================================================= -->
-  <footer class="bg-brand-noir text-stone-400 border-t border-brand-gold/20 py-16 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-stone-800">
-        
-        <div class="md:col-span-5 space-y-3">
-          <div class="flex items-center space-x-3">
-            <div class="w-9 h-9 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark">
-              <span class="font-serif text-sm font-bold text-brand-gold">IC</span>
-            </div>
-            <span class="font-serif text-xl tracking-widest uppercase text-white font-bold">Indian Celebritie</span>
-          </div>
-          <p class="text-xs text-stone-400 leading-relaxed max-w-sm">
-            Indian Celebritie is an Indian luxury fragrance house crafting signature Eau De Parfum with high oil concentrations (8+ hour longevity).
-          </p>
-          <div class="text-[11px] text-brand-champagne">
-            Direct Concierge: <a href="tel:+919625244683" class="text-brand-gold font-bold">+91 96252 44683</a>
-          </div>
-        </div>
-
-        <div class="md:col-span-3 space-y-2">
-          <h4 class="text-xs uppercase tracking-widest text-white font-bold mb-3">Fragrance House</h4>
-          <div><a href="fifty-shades.html" class="hover:text-brand-gold">Fifty Shades Eau De Parfum (100ml)</a></div>
-          <div><a href="love-drop.html" class="hover:text-brand-gold">Love Drop Floral EDP (100ml)</a></div>
-          <div><a href="teen-hug.html" class="hover:text-brand-gold">Teen Hug Modern Oud (100ml)</a></div>
-          <div><a href="#bestsellers" class="hover:text-brand-gold">The Grand Signature Trio</a></div>
-        </div>
-
-        <div class="md:col-span-4 space-y-2">
-          <h4 class="text-xs uppercase tracking-widest text-white font-bold mb-3">Official Channels</h4>
-          <div><a href="https://www.instagram.com/indiancelebritie/" target="_blank" class="hover:text-brand-gold">Instagram (@indiancelebritie) ↗</a></div>
-          <div><a href="https://www.amazon.in/stores/IndianCelebritie/page/983D3A7A-D47F-4BF3-9ED1-CF12CD80C2D8" target="_blank" class="hover:text-brand-gold">Amazon Storefront ↗</a></div>
-          <div><a href="https://wa.me/919625244683" target="_blank" class="hover:text-brand-gold">WhatsApp VIP Concierge (+91 96252 44683) ↗</a></div>
-        </div>
-
+  <footer class="bg-brand-noir text-stone-400 border-t border-brand-gold/20 py-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <div class="font-serif text-xl text-white tracking-[0.2em] uppercase">Indian Celebritie</div>
+      <p class="text-stone-400 text-xs max-w-md mx-auto">
+        Crafted with pure parfum oil concentrations for relentless longevity. Pan-India Express delivery.
+      </p>
+      <div class="flex justify-center space-x-6 text-brand-gold font-bold">
+        <a href="fifty-shades.html">Fifty Shades</a>
+        <a href="teen-hug.html">Teen Hug</a>
+        <a href="love-drop.html">Love Drop</a>
+        <a href="https://wa.me/919625244683" target="_blank">WhatsApp Desk</a>
       </div>
-
-      <div class="pt-8 text-center text-[11px] text-stone-500">
-        © 2026 Indian Celebritie Perfumes. All Rights Reserved. Pan-India Express Delivery.
+      <div class="pt-6 border-t border-stone-800 text-[11px] text-stone-500">
+        © 2026 Indian Celebritie. Direct Concierge: +91 96252 44683
       </div>
     </div>
   </footer>
@@ -934,7 +952,6 @@
         }
       });
 
-      // Update active tab style
       ['all', 'bestseller', 'for-her', 'unisex-oud'].forEach(c => {
         const tab = document.getElementById('tab-' + c);
         if (c === cat) {
@@ -945,12 +962,6 @@
           tab.classList.add('text-stone-500');
         }
       });
-    }
-
-    function handleInquirySubmit(e) {
-      e.preventDefault();
-      alert('Thank you! Your VIP inquiry has been transmitted to our Concierge Desk (+91 96252 44683). We will get back to you shortly.');
-      e.target.reset();
     }
   </script>
 
