@@ -1,0 +1,104 @@
+{
+  "slug": "teen-hug",
+  "asin": "B0FFGPFMNZ",
+  "title": "Teen Hug 100ml Eau De Parfum Unisex Oud Luxury Perfume Long Lasting Bold Modern Youthful Signature Fragrance Scent",
+  "price": 1337,
+  "mrp": 2499,
+  "savings": 1162,
+  "discount_percent": 46,
+  "specs": {
+    "Item Form": "Liquid",
+    "Scent": "Exotic Notes, Oud",
+    "Item Volume": "100 Millilitres",
+    "Item Weight": "250 Grams",
+    "Manufacturer": "Indian Celebritie Perfumes",
+    "Manufacturer Part Number": "TeenHug"
+  },
+  "bullets": [
+    "Rich Oud Composition – Deep, warm notes with modern sophistication.",
+    "Unisex Luxury Fragrance – Suitable for both men and women.",
+    "Long Lasting Performance – Stays fresh for extended hours.",
+    "Premium 100ml Bottle – Ideal for regular use or gifting.",
+    "Smooth Balanced Finish – Leaves a refined and memorable trail."
+  ],
+  "description": "",
+  "images": [
+    "public/assets/products/teen-hug/product_shot_1.jpg",
+    "public/assets/products/teen-hug/product_shot_2.jpg",
+    "public/assets/products/teen-hug/product_shot_3.jpg",
+    "public/assets/products/teen-hug/product_shot_4.jpg",
+    "public/assets/products/teen-hug/product_shot_5.jpg",
+    "public/assets/products/teen-hug/product_shot_6.jpg"
+  ],
+  "review_images_all": [
+    "public/assets/products/teen-hug/reviews/customer_review_1_0.jpg",
+    "public/assets/products/teen-hug/reviews/customer_review_2_1.jpg",
+    "public/assets/products/teen-hug/reviews/customer_review_3_2.jpg",
+    "public/assets/products/teen-hug/reviews/customer_review_4_3.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_1_0.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_1_1.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_2_2.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_2_3.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_3_4.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_3_5.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_4_6.jpg",
+    "public/assets/products/teen-hug/reviews/review_img_4_7.jpg"
+  ],
+  "reviews": [
+    {
+      "author": "Good product",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 13 August 2025",
+      "body": "The kind of fragrance that makes strangers stop and smile—it’s that unforgettable.“Romantic, long-lasting, and irresistibly charming—my go-to fragrance for any event....",
+      "review_images": [],
+      "verified": true
+    },
+    {
+      "author": "Kumar Shrikant",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 20 July 2025",
+      "body": "Great product .Great performance.Great smell.Great pricing.This is a scent that lasts. Chanel No. 5 has incredible longevity, easily sticking around for 8+ hours, depending on skin type",
+      "review_images": [
+        "public/assets/products/teen-hug/reviews/customer_review_1_0.jpg"
+      ],
+      "verified": true
+    },
+    {
+      "author": "Abhishek Anand",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 20 July 2025",
+      "body": "Fregnance is really good and design of packet is ethnic. I have bought 3 set of perfume ( teen hug , fifty shade & love drop)",
+      "review_images": [
+        "public/assets/products/teen-hug/reviews/customer_review_2_1.jpg",
+        "public/assets/products/teen-hug/reviews/customer_review_3_2.jpg"
+      ],
+      "verified": true
+    },
+    {
+      "author": "Golu Rai",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 1 December 2025",
+      "body": "Amazing long lasting fragrance with a smooth elegant touch that feels premium and perfect for daily useBest perfume 😍",
+      "review_images": [
+        "public/assets/products/teen-hug/reviews/customer_review_4_3.jpg"
+      ],
+      "verified": true
+    },
+    {
+      "author": "Prithvi s.",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 1 December 2025",
+      "body": "Perfume is good , fragrance is on sweet side . This perfume is long lasting ( 8-10 ) hours .",
+      "review_images": [
+        "public/assets/products/teen-hug/reviews/review_img_1_0.jpg",
+        "public/assets/products/teen-hug/reviews/review_img_1_1.jpg"
+      ],
+      "verified": true
+    }
+  ]
+}

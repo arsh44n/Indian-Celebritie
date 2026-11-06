@@ -18,135 +18,16 @@
   "business_model": {
     "archetype": "E_COMMERCE_D2C_STORE",
     "rationale": "Indian Celebritie is an Indian luxury fragrance house crafting signature Eau De Parfum (EDP) with high oil concentrations (8+ hour longevity), selling directly to consumers across India via official storefront and WhatsApp concierge.",
-    "recon_targets": [
-      "Fragrance olfactive family (Warm Gourmand, Amber Floral, Spicy Oriental)",
-      "Top, Heart, and Base olfactive pyramid notes",
-      "Scent duration, longevity, and sillage metrics (8+ Hours)",
-      "Bottle sizing (100ml Eau De Parfum) and luxury packaging specs",
-      "D2C pricing (₹1,337) vs M.R.P. (₹2,499 • 46% OFF)",
-      "Direct ordering mechanisms (Instant Cart Drawer & WhatsApp Express Checkout)"
-    ],
-    "asset_hunting_priorities": [
-      "High-resolution perfume bottle packshots and luxury box packaging",
-      "Editorial lifestyle fragrance photography and dark amber ambient imagery",
-      "Olfactory pyramid visuals (Coffee beans, Pink pepper, Vanilla pods, White Jasmine)",
-      "Customer reviews and sillage performance proof",
-      "Landscape hero video and portrait customer review video"
-    ],
     "primary_conversion": {
       "cta_text": "ADD TO CART — ₹1,337",
-      "secondary_cta": "ORDER VIA WHATSAPP (INSTANT VIP DISPATCH)",
-      "form_intent_options": [
-        "Product Inquiry / Custom Notes",
-        "Wholesale / Retail Stockist Query",
-        "Gifting & Corporate Bulk Orders",
-        "Order Tracking / Dispatch Status",
-        "Others"
-      ]
-    },
-    "benchmark_reference_pool": [
-      "Byredo (byredo.com)",
-      "Maison Francis Kurkdjian (franciskurkdjian.com)",
-      "Le Labo Fragrances (lelabofragrances.com)"
-    ]
-  },
-  "commercial_dna": {
-    "tagline": "Indian Fragrance House for All — Unapologetically Bold, Intensely Long-Lasting",
-    "tone_of_voice": "Editorial Luxury, Sensory, Alluring, Sophisticated, High-Contrast Haute Parfumerie",
-    "offerings_catalog": [
-      {
-        "id": "fifty-shades-edp",
-        "name": "Fifty Shades Eau De Parfum",
-        "category_tag": "Signature Eau De Parfum • 100ml",
-        "mrp": 2499,
-        "price": 1337,
-        "discount_badge": "46% OFF",
-        "sillage": "Enchanting Heavy Sillage",
-        "longevity": "8+ Hours Continuous Performance",
-        "concentration": "Eau De Parfum (High Oil Concentration)",
-        "olfactive_family": "Warm Gourmand • Amber Floral • Spicy Oriental",
-        "olfactive_pyramid": {
-          "top": ["Bold Roasted Coffee", "Fiery Pink Pepper", "Crisp Bergamot Zest"],
-          "heart": ["Radiant White Floral", "Night Blooming Jasmine", "Orange Blossom"],
-          "base": ["Creamy Bourbon Vanilla", "Warm Cedarwood", "Golden Amber Sillage"]
-        },
-        "highlight": "An intoxicating collision of rich roasted coffee, fiery pink pepper, sensual white florals, and velvety bourbon vanilla that commands the room from dawn till midnight.",
-        "assets": [
-          "public/assets/products/fifty_shades_box_bottle.jpg",
-          "public/assets/products/fifty_shades_bottle_detail.jpg",
-          "public/assets/products/bottle_square.jpg",
-          "public/assets/products/fifty_shades_shot4.jpg",
-          "public/assets/products/fifty_shades_shot3.jpg",
-          "public/assets/products/fifty_shades_shot5.jpg"
-        ]
-      }
-    ],
-    "brand_pillars": [
-      {
-        "title": "8+ Hours Relentless Sillage",
-        "desc": "Formulated with premium parfum oil concentrations that do not evaporate into thin air, leaving an unmistakable trail everywhere you walk."
-      },
-      {
-        "title": "Artisanal Olfactory Blends",
-        "desc": "Masterfully calibrated notes that evolve seamlessly across 3 distinct chapters: roasted coffee top, velvet florals heart, and creamy bourbon vanilla dry-down."
-      },
-      {
-        "title": "Unisex Haute Luxury",
-        "desc": "Genderless luxury crafted for connoisseurs who appreciate depth, distinction, and magnetic mystery."
-      },
-      {
-        "title": "Cruelty-Free & IFRA Standards",
-        "desc": "Safe on skin, crafted with ethically sourced aromatics and zero harsh synthetic fillers."
-      }
-    ],
-    "social_proof": {
-      "verified_reviews_count": "500+ Verified Buyers",
-      "rating": "4.8 / 5.0 Olfactory Satisfaction",
-      "amazon_store_verified": true
+      "secondary_cta": "ORDER VIA WHATSAPP (INSTANT VIP DISPATCH)"
     }
   },
-  "harvested_assets": {
-    "branding": [
-      "public/assets/branding/store_banner.jpg",
-      "public/assets/branding/brand_feature.jpg"
-    ],
-    "products": [
-      "public/assets/products/fifty_shades_box_bottle.jpg",
-      "public/assets/products/fifty_shades_bottle_detail.jpg",
-      "public/assets/products/bottle_square.jpg",
-      "public/assets/products/fifty_shades_shot4.jpg",
-      "public/assets/products/fifty_shades_shot3.jpg",
-      "public/assets/products/fifty_shades_shot5.jpg"
-    ],
-    "videos": [
-      "public/assets/videos/hero_landscape.mp4",
-      "public/assets/videos/review_portrait.mp4"
-    ]
-  },
-  "creative_direction": {
-    "benchmark": "Byredo & Maison Francis Kurkdjian (Ultra-Luxury Niche Parfumerie)",
-    "design_tokens": {
-      "primary": "#0C0A09",
-      "secondary": "#1C1917",
-      "accent_gold": "#D4AF37",
-      "accent_amber": "#C5A059",
-      "background_light": "#FAFAF9",
-      "text_dark": "#0C0A09",
-      "text_muted": "#78716C",
-      "border": "#E7E5E4"
-    },
-    "typography": {
-      "display_serif": "Cormorant Garamond, Georgia, serif",
-      "body_sans": "Montserrat, system-ui, sans-serif"
-    },
-    "layout_engine": "ENGINE_A_E_COMMERCE_D2C",
-    "anti_patterns_rejected": [
-      "No sports or court booking templates",
-      "No cheap neon discount countdown popups",
-      "No slow heavy multi-page routing",
-      "No broken asset links"
-    ],
-    "checkpoint_approved": true,
-    "user_pivot_feedback": "Use unified number 9625244683 throughout page; incorporate provided landscape hero video and portrait customer review video."
+  "deployment": {
+    "git_remote": "https://github.com/arsh44n/Indian-Celebritie.git",
+    "branch": "main",
+    "status": "PUSHED_SUCCESSFULLY",
+    "github_pages_settings_url": "https://github.com/arsh44n/Indian-Celebritie/settings/pages",
+    "live_url": "https://arsh44n.github.io/Indian-Celebritie/"
   }
 }

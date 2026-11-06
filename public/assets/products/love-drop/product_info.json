@@ -1,0 +1,87 @@
+{
+  "slug": "love-drop",
+  "asin": "B0FFMBBH78",
+  "title": "Love Drop Eau De Parfum 100ml Premium Floral Perfume with Jasmine Rose Sandalwood Vanilla Long Lasting Women Fragrance",
+  "price": 825,
+  "mrp": 1499,
+  "savings": 674,
+  "discount_percent": 45,
+  "specs": {
+    "Item Form": "Liquid",
+    "Scent": "Floral",
+    "Item Volume": "100 Millilitres",
+    "Item Weight": "250 Grams",
+    "Manufacturer": "Indian Celebritie Perfumes",
+    "Manufacturer Part Number": "Ldedp100"
+  },
+  "bullets": [
+    "Long lasting formula suitable for all day wear",
+    "Perfect for office, parties, weddings, and special occasions",
+    "Balanced aroma that is rich yet not overpowering",
+    "Suitable for daily wear and festive celebrations",
+    "Enhances confidence with a feminine signature scent"
+  ],
+  "description": "",
+  "images": [
+    "public/assets/products/love-drop/product_shot_1.jpg",
+    "public/assets/products/love-drop/product_shot_2.jpg",
+    "public/assets/products/love-drop/product_shot_3.jpg",
+    "public/assets/products/love-drop/product_shot_4.jpg",
+    "public/assets/products/love-drop/product_shot_5.jpg"
+  ],
+  "review_images_all": [
+    "public/assets/products/love-drop/reviews/customer_review_0_0.jpg",
+    "public/assets/products/love-drop/reviews/customer_review_2_1.jpg",
+    "public/assets/products/love-drop/reviews/customer_review_2_2.jpg",
+    "public/assets/products/love-drop/reviews/review_img_0_0.jpg",
+    "public/assets/products/love-drop/reviews/review_img_0_1.jpg",
+    "public/assets/products/love-drop/reviews/review_img_2_2.jpg",
+    "public/assets/products/love-drop/reviews/review_img_2_3.jpg",
+    "public/assets/products/love-drop/reviews/review_img_2_4.jpg",
+    "public/assets/products/love-drop/reviews/review_img_2_5.jpg"
+  ],
+  "reviews": [
+    {
+      "author": "Awesome",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 20 July 2025",
+      "body": "A beautifully balanced perfume with soft floral and warm musky notes. It feels luxurious yet subtle, making it perfect for both day and evening wear. The scent lingers gently without being overpowering—charming, graceful, and effortlessly sophisticated.",
+      "review_images": [
+        "public/assets/products/love-drop/reviews/customer_review_0_0.jpg",
+        "public/assets/products/love-drop/reviews/customer_review_2_1.jpg"
+      ],
+      "verified": true
+    },
+    {
+      "author": "Golu Rai",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 1 December 2025",
+      "body": "Such an impressive fragrance smooth uplifting long lasting, and truly perfect for enhancing your daily style effortlessly.Nice & Best perfume",
+      "review_images": [],
+      "verified": true
+    },
+    {
+      "author": "Abhishek Anand",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 20 July 2025",
+      "body": "Fregnance is really good and design of packet is ethnic. I have bought 3 set of perfume ( teen hug , fifty shade & love drop)",
+      "review_images": [
+        "public/assets/products/love-drop/reviews/customer_review_2_2.jpg",
+        "public/assets/products/love-drop/reviews/review_img_0_0.jpg"
+      ],
+      "verified": true
+    },
+    {
+      "author": "Good product",
+      "rating": "5 out of 5 stars",
+      "stars": 5.0,
+      "date": "Reviewed in India on 13 August 2025",
+      "body": "This scent is pure magic—long-lasting, perfectly balanced, and turns heads every time I wear it. I’ve lost count of how many compliments I’ve gotten.. 💕😘",
+      "review_images": [],
+      "verified": true
+    }
+  ]
+}
