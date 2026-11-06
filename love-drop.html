@@ -94,8 +94,8 @@
         
         <!-- Brand Logo & Name Only -->
         <a href="index.html" class="flex items-center space-x-3.5 group">
-          <div class="w-11 h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md group-hover:scale-105 transition-transform">
-            <span class="font-serif text-lg font-bold gold-gradient-text">IC</span>
+          <div class="w-11 h-11 rounded-full border border-brand-gold/80 flex items-center justify-center bg-brand-dark shadow-md overflow-hidden p-1 group-hover:scale-105 transition-transform">
+            <img src="public/assets/branding/Logo.png" alt="Indian Celebritie Logo" class="w-full h-full object-contain" onerror="this.outerHTML='<span class=\'font-serif text-lg font-bold gold-gradient-text\'>IC</span>'">
           </div>
           <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.18em] uppercase text-white group-hover:text-brand-champagne transition-colors">Indian Celebritie</span>
         </a>
@@ -118,60 +118,44 @@
   </nav>
 
   <!-- ========================================================================= -->
-  <!-- 3. APPLE-STYLE SCROLLYTELLING 3D HERO STAGE (SCROLL-PINNED CANVAS) -->
+  <!-- 3. HERO SECTION: VIDEO FRAMES SCROLL ANIMATION -->
   <!-- ========================================================================= -->
-  <div id="scrolly-container" class="relative w-full" style="height: 450vh;">
+  <div id="scrolly-container" class="relative w-full" style="height: 380vh;">
     
-    <!-- Pinned Viewport (100vh Sticky Stage) -->
-    <div id="scrolly-stage" class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center pointer-events-none select-none bg-gradient-to-b from-[#080507] via-[#100A0E] to-[#090608]">
+    <!-- Pinned Viewport (100vh Sticky Canvas Stage) -->
+    <div id="scrolly-stage" class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center select-none bg-black">
       
-      <!-- 3D Olfactory Particle Physics Canvas ("Swimming in the floral aura") -->
-      <canvas id="scrolly-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+      <!-- Video Frames Canvas (Scrubs 1:1 through 238 frames as user scrolls) -->
+      <canvas id="frame-canvas" class="absolute inset-0 w-full h-full"></canvas>
 
-      <!-- Ambient Champagne Rose & Pearl Radial Glow -->
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(232,165,152,0.14)_0%,rgba(20,12,18,0.5)_50%,transparent_80%)] pointer-events-none"></div>
+      <!-- Ambient Edge Vignette & Floral Glow -->
+      <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_45%,rgba(13,10,12,0.85)_100%)]"></div>
 
-      <!-- Central 3D Product Flacon Stage (Manipulated via 60fps lerp physics) -->
-      <div id="scrolly-bottle-wrapper" class="relative z-10 flex items-center justify-center will-change-transform transition-transform duration-75">
-        <div class="relative group">
-          <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-3/4 h-12 bg-black/80 blur-2xl rounded-full pointer-events-none"></div>
-          
-          <img id="scrolly-bottle-img" 
-               src="public/assets/products/love-drop/product_shot_1.jpg" 
-               alt="Love Drop Eau De Parfum 100ml" 
-               class="w-auto max-h-[58vh] sm:max-h-[66vh] object-contain drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] filter contrast-110">
-          
-          <div id="scrolly-specular-light" class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 mix-blend-overlay transition-opacity duration-300"></div>
-        </div>
-      </div>
-
-      <!-- Initial Hero Cinematic Title & Badge -->
+      <!-- Initial Hero Cinematic Title & Scroll Indicator (Fades smoothly in first 12% scroll) -->
       <div id="scrolly-intro-text" class="absolute inset-0 flex flex-col items-center justify-between p-6 sm:p-12 z-20 pointer-events-none transition-all duration-300">
         <div class="text-center pt-12 sm:pt-16 max-w-2xl mx-auto">
-          <span class="inline-block px-4 py-1.5 rounded-full bg-pink-900/40 border border-pink-400/40 text-pink-200 text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase mb-4 backdrop-blur-md shadow-lg">
-            3D Feminine Floral Experience
+          <span class="inline-block px-4 py-1.5 rounded-full bg-pink-900/30 border border-pink-400/40 text-pink-200 text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase mb-4 backdrop-blur-md shadow-lg">
+            3D Video Frame Scrollytelling
           </span>
-          <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white tracking-wide">
+          <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-white tracking-wide drop-shadow-lg">
             Love Drop
           </h1>
-          <p class="text-xs sm:text-sm text-pink-100/80 uppercase tracking-[0.25em] mt-3 font-medium">
-            100ml Eau De Parfum • Jasmine Sambac, Damask Rose & Sandalwood
+          <p class="text-xs sm:text-sm text-pink-100/90 uppercase tracking-[0.25em] mt-3 font-medium drop-shadow-md">
+            100ml Eau De Parfum • Jasmine Sambac, Damask Rose & Mysore Sandalwood
           </p>
         </div>
 
-        <div class="flex flex-col items-center pb-4 text-stone-400">
-          <span class="text-[10px] uppercase tracking-[0.25em] text-brand-gold mb-2 font-bold animate-pulse">
-            Scroll to Deconstruct & Swim Through Notes ↓
+        <div class="flex flex-col items-center pb-6 text-stone-400">
+          <span class="text-[10px] uppercase tracking-[0.25em] text-pink-300 mb-2 font-bold animate-pulse">
+            Scroll to Play Frame-by-Frame Animation ↓
           </span>
-          <div class="w-5 h-9 rounded-full border border-brand-gold/50 flex items-start justify-center p-1">
-            <div class="w-1.5 h-2.5 rounded-full bg-brand-gold animate-bounce"></div>
+          <div class="w-5 h-9 rounded-full border border-pink-300/50 flex items-start justify-center p-1">
+            <div class="w-1.5 h-2.5 rounded-full bg-pink-300 animate-bounce"></div>
           </div>
         </div>
       </div>
 
-      <!-- Progressive Sensory Acts -->
-      
-      <!-- Act 1: Jasmine Sambac & Morning Dew (Visible 18% - 42% scroll) -->
+      <!-- Progressive Sensory Callouts during scroll sequence -->
       <div id="act-1-callout" class="absolute left-6 sm:left-14 lg:left-24 top-1/2 -translate-y-1/2 max-w-xs sm:max-w-sm z-20 opacity-0 pointer-events-none transition-all duration-500">
         <div class="glass-card p-6 rounded-2xl shadow-2xl border-l-4 border-l-pink-400">
           <span class="text-[10px] font-bold text-pink-300 uppercase tracking-[0.25em] block mb-1">Act 01 • The Opening</span>
@@ -179,46 +163,21 @@
           <p class="text-xs text-stone-300 leading-relaxed">
             Fresh morning-picked night jasmine opens with radiant floral purity, like a delicate spring breeze caressing warm skin.
           </p>
-          <div class="mt-3 flex items-center space-x-2 text-[10px] text-pink-300 font-mono">
-            <span>Aura: Graceful</span>
-            <span>•</span>
-            <span>Longevity: 0 - 2.5 Hours</span>
-          </div>
         </div>
       </div>
 
-      <!-- Act 2: Damask Rose Heart (Visible 45% - 72% scroll) -->
       <div id="act-2-callout" class="absolute right-6 sm:right-14 lg:right-24 top-1/2 -translate-y-1/2 max-w-xs sm:max-w-sm z-20 opacity-0 pointer-events-none transition-all duration-500">
         <div class="glass-card p-6 rounded-2xl shadow-2xl border-r-4 border-r-pink-400 text-right">
-          <span class="text-[10px] font-bold text-pink-300 uppercase tracking-[0.25em] block mb-1">Act 02 • The Heart</span>
-          <h3 class="font-serif text-2xl text-white font-bold mb-2">Velvet Damask Rose</h3>
+          <span class="text-[10px] font-bold text-pink-300 uppercase tracking-[0.25em] block mb-1">Act 02 • The Core</span>
+          <h3 class="font-serif text-2xl text-white font-bold mb-2">Damask Rose & Sandalwood</h3>
           <p class="text-xs text-stone-300 leading-relaxed">
-            An intoxicating heart of concentrated rose absolute, exuding royal romanticism without the sharp alcohol sting of ordinary perfumes.
+            Concentrated damask rose absolute meets creamy golden sandalwood and Bourbon vanilla for a timeless 8+ hour trail.
           </p>
-          <div class="mt-3 flex items-center justify-end space-x-2 text-[10px] text-pink-300 font-mono">
-            <span>Dermatologically Safe</span>
-            <span>•</span>
-            <span>Pure Botanical Distillate</span>
-          </div>
         </div>
       </div>
 
-      <!-- Act 3: Sandalwood Cream & Vanilla Sillage (Visible 75% - 98% scroll) -->
-      <div id="act-3-callout" class="absolute bottom-16 sm:bottom-20 left-1/2 -translate-x-1/2 text-center max-w-md w-full px-4 z-20 opacity-0 pointer-events-none transition-all duration-500">
-        <div class="glass-card p-6 rounded-2xl shadow-2xl border-t-2 border-t-brand-gold">
-          <span class="text-[10px] font-bold text-brand-gold uppercase tracking-[0.25em] block mb-1">Act 03 • The Dry Down</span>
-          <h3 class="font-serif text-2xl text-white font-bold mb-2">Mysore Sandalwood & Vanilla</h3>
-          <p class="text-xs text-stone-300 leading-relaxed">
-            Creamy golden sandalwood anchors into tender Bourbon vanilla, leaving a whisper of timeless feminine sophistication for 8+ hours.
-          </p>
-          <div class="mt-3 inline-block px-3 py-1 rounded-full bg-brand-gold/20 text-brand-gold text-[10px] font-bold tracking-wider uppercase">
-            Ready to Experience • Scroll Down to Acquire ↓
-          </div>
-        </div>
-      </div>
-
-      <!-- Scroll Progress Bar -->
-      <div class="absolute bottom-6 left-8 right-8 max-w-md mx-auto h-[2px] bg-white/10 rounded-full overflow-hidden z-20">
+      <!-- Scrub Progress Bar -->
+      <div class="absolute bottom-6 left-8 right-8 max-w-md mx-auto h-[2px] bg-white/10 rounded-full overflow-hidden z-20 pointer-events-none">
         <div id="scrolly-progress-bar" class="h-full bg-gradient-to-r from-pink-400 to-brand-gold w-0 transition-all duration-75"></div>
       </div>
 
@@ -243,40 +202,73 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start glass-card p-6 sm:p-10 rounded-3xl border border-brand-gold/30">
         
-        <!-- Left: Studio Packshot Gallery -->
+        <!-- Left: Interactive Gallery Stage (Images + MP4 Video Player) -->
         <div class="lg:col-span-6 flex flex-col items-center">
-          <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-black/60 p-6 flex items-center justify-center border border-brand-gold/30 shadow-xl group">
-            <div class="absolute top-4 left-4 z-20 py-1 px-3 rounded-full bg-pink-800 text-white text-[10px] font-bold tracking-widest uppercase">
+          
+          <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-black/80 p-4 sm:p-6 flex items-center justify-center border border-pink-400/30 shadow-2xl group">
+            <div class="absolute top-4 left-4 z-20 py-1 px-3 rounded-full bg-pink-800 text-white text-[10px] font-bold tracking-widest uppercase shadow-md">
               45% OFF LAUNCH
             </div>
-            <div class="absolute top-4 right-4 z-20 py-1 px-3 rounded-full bg-emerald-950 border border-emerald-500/50 text-[10px] font-bold text-emerald-400 uppercase flex items-center space-x-1.5">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-              <span>In Stock • Ready to Dispatch</span>
+            <div class="absolute top-4 right-4 z-20 py-1 px-3 rounded-full bg-emerald-950 border border-emerald-500/50 text-[10px] font-bold text-emerald-400 uppercase flex items-center space-x-1.5 shadow-md">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>In Stock • Ready to Ship</span>
             </div>
 
+            <!-- Active Main Image -->
             <img id="p-main-img" 
                  src="public/assets/products/love-drop/product_shot_1.jpg" 
                  alt="Love Drop Eau De Parfum 100ml" 
                  class="w-full h-full object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.5)] transition-all duration-300 group-hover:scale-105 cursor-zoom-in">
+
+            <!-- Active Main MP4 Video Player (Shown when video thumbnail is clicked) -->
+            <video id="p-main-video" 
+                   src="public/assets/products/love-drop/product_video.mp4" 
+                   controls loop playsinline 
+                   class="hidden w-full h-full object-contain rounded-xl bg-black">
+            </video>
           </div>
 
-          <!-- Thumbnails Row (Shop Owner Packshots) -->
-          <div class="grid grid-cols-5 gap-2.5 mt-4 w-full">
-            <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_1.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-black/40 shadow-sm transition-all hover:scale-105">
+          <!-- Thumbnails Row (Images + MP4 Video in 3rd position) -->
+          <div class="grid grid-cols-6 gap-2 sm:gap-2.5 mt-4 w-full">
+            
+            <!-- Thumbnail 1: Shot 1 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_1.jpg', this)" class="thumb-btn border-2 border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Flacon Front View">
               <img src="public/assets/products/love-drop/product_shot_1.jpg" alt="Shot 1" class="w-full h-12 object-contain">
             </button>
-            <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_2.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/40 shadow-sm transition-all hover:scale-105">
+
+            <!-- Thumbnail 2: Shot 2 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_2.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Flacon Angle View">
               <img src="public/assets/products/love-drop/product_shot_2.jpg" alt="Shot 2" class="w-full h-12 object-contain">
             </button>
-            <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_3.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/40 shadow-sm transition-all hover:scale-105">
+
+            <!-- Thumbnail 3: OFFICIAL PRODUCT VIDEO (MP4) -->
+            <button onclick="changeMainMedia('video', 'public/assets/products/love-drop/product_video.mp4', this)" class="thumb-btn relative border border-brand-gold/60 rounded-xl overflow-hidden p-1 bg-brand-charcoal shadow-sm transition-all hover:scale-105 group" title="Watch Product Showcase Video (MP4)">
+              <div class="relative w-full h-12 flex items-center justify-center bg-black/80 rounded-lg overflow-hidden">
+                <img src="public/assets/products/love-drop/product_shot_1.jpg" class="w-full h-full object-cover opacity-50">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-brand-gold/20 transition-colors">
+                  <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-noir flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                </div>
+                <span class="absolute bottom-0.5 right-1 text-[8px] font-bold text-brand-gold uppercase bg-black/90 px-1 rounded border border-brand-gold/30">VIDEO</span>
+              </div>
+            </button>
+
+            <!-- Thumbnail 4: Shot 3 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_3.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Detail Shot">
               <img src="public/assets/products/love-drop/product_shot_3.jpg" alt="Shot 3" class="w-full h-12 object-contain">
             </button>
-            <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_4.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/40 shadow-sm transition-all hover:scale-105">
+
+            <!-- Thumbnail 5: Shot 4 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_4.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Packaging View">
               <img src="public/assets/products/love-drop/product_shot_4.jpg" alt="Shot 4" class="w-full h-12 object-contain">
             </button>
-            <button onclick="changeMainImage('public/assets/products/love-drop/product_shot_5.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/40 shadow-sm transition-all hover:scale-105">
+
+            <!-- Thumbnail 6: Shot 5 -->
+            <button onclick="changeMainMedia('image', 'public/assets/products/love-drop/product_shot_5.jpg', this)" class="thumb-btn border border-stone-700 hover:border-brand-gold rounded-xl overflow-hidden p-1 bg-black/50 shadow-sm transition-all hover:scale-105" title="Lifestyle View">
               <img src="public/assets/products/love-drop/product_shot_5.jpg" alt="Shot 5" class="w-full h-12 object-contain">
             </button>
+
           </div>
         </div>
 
@@ -870,11 +862,23 @@
 
   <!-- Scripts -->
   <script src="public/js/cart.js"></script>
-  <script src="public/js/scrolly3d.js"></script>
+  <script src="public/js/frame_scrubber.js"></script>
   <script>
+    // Initialize Frame Scroller Hero with 238 frames
     document.addEventListener('DOMContentLoaded', () => {
-      if (window.initScrolly3D) {
-        window.initScrolly3D({ theme: 'floral-rose' });
+      if (window.initFrameScrubber) {
+        window.initFrameScrubber({
+          containerId: 'scrolly-container',
+          canvasId: 'frame-canvas',
+          basePath: 'public/assets/products/love-drop/frames/',
+          frameCount: 238,
+          introTextId: 'scrolly-intro-text',
+          progressBarId: 'scrolly-progress-bar',
+          callouts: [
+            { id: 'act-1-callout', start: 0.18, end: 0.44, side: 'left' },
+            { id: 'act-2-callout', start: 0.48, end: 0.74, side: 'right' }
+          ]
+        });
       }
     });
 
@@ -882,13 +886,27 @@
     let currentSelectedTitle = 'Love Drop Eau De Parfum (100ml)';
     let currentSelectedSpec = 'Single Flacon • 100ml';
 
-    function changeMainImage(src, btn) {
+    // Gallery Media Switcher (Images + MP4 Video Player)
+    function changeMainMedia(type, src, btn) {
       const img = document.getElementById('p-main-img');
-      img.style.opacity = '0.3';
-      setTimeout(() => {
-        img.src = src;
-        img.style.opacity = '1';
-      }, 150);
+      const vid = document.getElementById('p-main-video');
+
+      if (type === 'video') {
+        img.classList.add('hidden');
+        vid.classList.remove('hidden');
+        vid.src = src;
+        vid.play().catch(() => {});
+      } else {
+        vid.pause();
+        vid.classList.add('hidden');
+        img.classList.remove('hidden');
+        img.style.opacity = '0.3';
+        setTimeout(() => {
+          img.src = src;
+          img.style.opacity = '1';
+        }, 120);
+      }
+
       document.querySelectorAll('.thumb-btn').forEach(b => {
         b.classList.remove('border-brand-gold', 'border-2');
         b.classList.add('border-stone-700', 'border');
